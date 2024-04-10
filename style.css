@@ -29,7 +29,7 @@
     left: 683px;
 }
 
-.login-page .overlap-group {
+.login-page .upper-right-group {
     position: relative;
     width: 853px;
     height: 569px;
@@ -44,7 +44,7 @@
     left: 763px;
 }
 
-.login-page .img {
+.login-page .polygon-1 {
     position: absolute;
     width: 300px;
     height: 248px;
@@ -84,7 +84,7 @@
     left: 506px;
 }
 
-.login-page .overlap-group-wrapper {
+.login-page .bottom-left-group {
     position: absolute;
     width: 786px;
     height: 829px;
@@ -222,27 +222,27 @@
     line-height: normal;
 }
 
-.login-page .rectangle-4 {
+.login-page .login-button {
     position: absolute;
     width: 350px;
     height: 53px;
     top: 675px;
     left: 1004px;
     background-color: #000000;
-}
-
-.login-page .text-wrapper-3 {
-    position: absolute;
-    width: 73px;
-    top: 681px;
-    left: 1152px;
     font-family: "Kanit-Regular", Helvetica;
     font-weight: 400;
     color: #ffffff;
     font-size: 25px;
     letter-spacing: 0;
     line-height: normal;
+    text-align: center;
+    
 }
+
+.login-page .login-button:hover {
+    background-color: #222222;
+}
+
 
 .login-page .text-wrapper-4 {
     position: absolute;
@@ -256,40 +256,50 @@
     line-height: normal;
 }
 
-.login-page .text-wrapper-5 {
+.login-page .username-input {
     position: absolute;
     width: 183px;
-    top: 496px;
-    left: 1011px;
+    top: 466px;
+    left: 1001px;
     font-family: "Kanit-Regular", Helvetica;
     font-weight: 400;
-    color: #727272;
-    font-size: 25px;
+    color: #ffffff;
+    font-size: 20px;
     letter-spacing: 0;
     line-height: normal;
 }
 
-.login-page .text-wrapper-6 {
+.login-page .password-input {
     position: absolute;
     width: 183px;
-    top: 591px;
-    left: 1011px;
+    top: 561px;
+    left: 1001px;
     font-family: "Kanit-Regular", Helvetica;
     font-weight: 400;
-    color: #727272;
-    font-size: 25px;
+    color: #ffffff;
+    font-size: 20px;
     letter-spacing: 0;
     line-height: normal;
 }
 
-.login-page .text-wrapper-7 {
+.login-page .register-button {
     position: absolute;
     top: 755px;
     left: 1232px;
     font-family: "Kanit-Regular", Helvetica;
     font-weight: 400;
-    color: #e9d89a;
+    background-color: #0d6648;
+    color: #e9d89b;
     font-size: 15px;
     letter-spacing: 0;
     line-height: normal;
+}
+
+.login-page .register-button:hover{
+    color: #e5c354;
+    
+}
+
+.login-page input[type="text"]{
+    font-size: 20px;
 }
