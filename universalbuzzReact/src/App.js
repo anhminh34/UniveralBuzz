@@ -85,7 +85,7 @@ const ProfileSection = () => (
   <section className="flex z-10 flex-col self-stretch my-auto w-full max-md:mt-10 max-md:max-w-full">
     <div className="flex flex-col ml-10 max-w-full text-4xl font-bold text-teal-950 w-[586px]">
       <h2 className="text-5xl text-black max-md:max-w-full max-md:text-4xl">
-        Welcome, NAME!
+        Welcome Hornets!
       </h2>
       <div className="flex gap-5 mt-6 whitespace-nowrap bg-zinc-300 max-md:flex-wrap">
         <img
@@ -221,7 +221,9 @@ const Footer = () => (
   <footer className="px-14 py-16 w-full bg-teal-950 max-md:px-5 max-md:max-w-full">
     <div className="flex gap-5 max-md:flex-col max-md:gap-0">
       <div className="flex flex-col w-[33%] max-md:ml-0 max-md:w-full">
-        <div className="text-2xl text-white max-md:mt-10">About Us:</div>
+        <div className="text-2xl text-white max-md:mt-10">
+          <h3>About Us:</h3>
+          </div>
       </div>
       <div className="flex flex-col ml-5 w-[33%] max-md:ml-0 max-md:w-full">
         <div className="text-2xl text-white underline max-md:mt-10">

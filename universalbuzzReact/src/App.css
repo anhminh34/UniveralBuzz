@@ -24,13 +24,54 @@ a{
   flex-wrap: wrap;
 }
 
-// put the two images side by side
-.col-2{
-  flex: 0 0 50%;
-  max-width: 50%;
-}
 header{
   background: darkgreen;
   padding: 10px 0;
   border-bottom: 1px solid #e0e0e0;
+}
+header .logo{
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+header ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+header ul li{
+  margin: 0 10px;
+}
+header ul li a{
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+header ul li a:hover{
+  color: #f9f9f9;
+}
+
+.ProfileSection{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.ProfileSection img{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+footer{
+  background: darkgreen;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
 }
