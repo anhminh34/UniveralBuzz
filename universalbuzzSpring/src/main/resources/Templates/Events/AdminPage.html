@@ -58,45 +58,13 @@
         left: 4.5%;
     }
 
-    /*Creates the event holders, gray squares with rounded corners.*/
-    /*Text box on the left side for the time and day, on the right for the description.*/
-    .eventContainer {
-        position: absolute;
-        background-color: #D9D9D9;
-        width: 60%;
-        height: 15%;
-        top: 15%;
-        left: 22%;
-        border-radius: 5%;
-        font-family: sans-serif;
-    }
-    .timeText {
-        position: relative;
-        max-width: 20%;
-        max-height: 80%;
-        left: 3%;
-        font-family: sans-serif;
-        border: grey 2px solid;
-        border-radius: 5%;
-    }
-    .descText {
-        position: relative;
-        left: 30%;
-        max-width: 66%;
-        max-height: 20%;
-        font-family: sans-serif;
-        border: grey 2px solid;
-        border-radius: 5%;
-    }
-
 </style>
 
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>frontEventsAdminPage</title>
+    <title>Admin Page</title>
     <!--Finds the correct font 'Lilita One'-->
     <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
-
     <title>EventsPage</title>
 </head>
 <body>
@@ -118,12 +86,22 @@
     <h3 class="submitEditButtons">Edit Events</h3>
 </div>
 
+    <div th:each="i : ${#numbers.sequence(1, num)}">
+        <div style="width: 50px; height: 50px; background-color: #000000; margin: 5px;"></div>
+    </div>
+
 <!--Creates the event holders, gray squares with rounded corners.-->
 <!--Text box on the left side for the time and day, on the right for the description.-->
-<div class="eventContainer">
-    <p class="timeText">This is time</p>
-    <p class="descText">This is description</p>
-</div>
+<div class="eventContainer" style="width: 1022px; height: 200px; left: 380px; top: 301px; position: absolute">
+    <div class="background" style="width: 1022px; height: 200px; left: 0px; top: 0px; position: absolute; background: #D9D9D9; border-radius: 20px"></div>
+    <div class="date" style="width: 152px; height: 40px; left: 310px; top: 82px; position: absolute; color: black; font-size: 25px; font-family: Kanit; font-weight: 400; word-wrap: break-word">Event Date</div>
+    <div class="description" style="width: 212px; height: 40px; left: 497px; top: 80px; position: absolute; color: black; font-size: 25px; font-family: Kanit; font-weight: 400; word-wrap: break-word">Description of the event</div>
+
+    <div class="title" style="width: 196px; height: 44px; left: 65px; top: 78px; position: absolute; color: #043927; font-size: 30px; font-family: Kanit; font-weight: 500; text-decoration: underline; word-wrap: break-word">EVENT TITLE</div>
+    <div class="button" style="width: 118px; height: 43px; left: 179px; top: 19px; position: absolute">
+      <div class="deleteBackground" style="width: 118px; height: 41px; left: 0px; top: 0px; position: absolute; background: #B03A3A; border-radius: 20px"></div>
+      <div class="deleteText" style="width: 97px; height: 42px; left: 21px; top: 1px; position: absolute; color: white; font-size: 25px; font-family: Kanit; font-weight: 400; word-wrap: break-word">Delete</div>
+    </div>
 
 </body>
 </html>
