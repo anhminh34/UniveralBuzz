@@ -1,6 +1,3 @@
-<!DOCTYPE html>
-
-<style>
 body {
     margin: 0;
     padding: 0;
@@ -97,46 +94,3 @@ body {
     top: 15%;
     left: 22%;
 }
-</style>
-
-<html lang="en">
-    <head>
-        <title>EventsPage</title>
-        <!--Finds the correct font 'Lilita One'-->
-        <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
-
-        <title>EventsPage</title>
-    </head>
-    <body>
-        <!--Sets up the background, position, and color of the top green bar and text-->
-        <!--ADD LINKS TO THE OTHER PAGES-->
-        <div class="greenHeader">
-        <h1 class="titleText" style="color: white">Events</h1>
-        <h3 class="topBarText" style="right: 19%; top: 40%;">Home</h3>
-        <h3 class="topBarText" style="right: 12.5%; top: 40%;">About</h3>
-        <h3 class="topBarText" style="right: 5%; top: 40%;">Sign Out</h3>
-        </div>
-        
-        <!--Create a tan rectangle on the left side of the screen, should move down the whole page-->
-        <!--Contains a filter for the events page and the links to the event submission page-->
-        <div class="tanRectangle">
-            <input type="text" class="searchBar" placeholder="Filter">
-            <!--ADD LINKS TO THE OTHER PAGES-->
-            <h3 class="submitEditButtons">Submit New Event</h3>
-            <h3 class="submitEditButtons">Edit Events</h3>
-        </div>
-
-        <!--Stores all of the events in a scrollable box-->
-        <div class="eventsHolder">
-            <p class="Event1" style="width: 1028px; height: 238px; left: 366px; top: 279px; position: absolute"></p>
-        </div>
-
-        <!--Creates the event boxes, gray squares with rounded corners.-->
-        <!--Text box on the left side for the time and day, on the right for the description.-->
-        <div class="eventBox">
-            <p class="timeText">This is time</p>
-            <p class="descText">This is description</p>
-        </div>
-
-    </body>
-</html>
