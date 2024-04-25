@@ -1,7 +1,8 @@
 import React from "react";
 import "./WindowChatroom.css";
 
-export const WindowChatroom = () => {
+function Windowchatroom() {
+
   return (
     <div className="window-chatroom">
       <div className="overlap-wrapper">
@@ -69,4 +70,6 @@ export const WindowChatroom = () => {
       </div>
     </div>
   );
-};
+}
+
+export default Windowchatroom;
