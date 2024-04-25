@@ -8,12 +8,12 @@ import About from "./pages/About";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
-import errorpage from "./pages/error-page";
+import ErrorPage from "./pages/error-page";
 import "./App.css";
 
 const router = createBrowserRouter([{
   path: "/",
-  element: <Home />,
+  element: <Home />, // This is the default route
 }, {
   path: "/about",
   element: <About />,
@@ -25,7 +25,7 @@ const router = createBrowserRouter([{
   element: <Register />,
 }, {
   path: "*",
-  element: <error-page />,
+  element: <ErrorPage />,
 }]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
