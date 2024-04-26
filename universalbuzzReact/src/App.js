@@ -4,12 +4,11 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-
 import About from "./pages/About";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
-import errorpage from "./pages/error-page";
+import ErrorPage from "./pages/error-page";
 import Windowchatroom from "./pages/WindowChatroom";
 import "./App.css";
 
@@ -30,7 +29,7 @@ const router = createBrowserRouter([{
   element: <Windowchatroom />,
 }, {
   path: "*",
-  element: <errorpage />,
+  element: <ErrorPage />,
 }]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
