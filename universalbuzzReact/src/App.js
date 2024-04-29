@@ -8,24 +8,31 @@ import About from "./pages/About";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
-import errorpage from "./pages/error-page";
+import ErrorPage from "./pages/error-page";
+import Windowchatroom from "./pages/WindowChatroom";
 import "./App.css";
 
 const router = createBrowserRouter([{
   path: "/",
-  element: <Home />,
-}, {
-  path: "/about",
-  element: <About />,
+  element: <Login />,
 }, {
   path: "/login",
   element: <Login />,
+},{
+  path: "/about",
+  element: <About />,
+}, {
+  path: "/home",
+  element: <Home />,
 }, {
   path: "/register",
   element: <Register />,
 }, {
+  path: "/windowchatroom",
+  element: <Windowchatroom />,
+}, {
   path: "*",
-  element: <error-page />,
+  element: <ErrorPage />,
 }]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
