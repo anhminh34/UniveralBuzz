@@ -1,0 +1,1 @@
+create table Users(userID int not null, firstname varchar(20), lastname varchar(20), username varchar(30) not null, password varchar(30) not null, email varchar(50) not null, address varchar(100));
