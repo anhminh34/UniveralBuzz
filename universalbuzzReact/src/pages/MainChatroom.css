@@ -1,0 +1,665 @@
+.main-chatroom {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .main-chatroom .div {
+    background-color: #ffffff;
+    height: 1024px;
+    overflow: hidden;
+    position: relative;
+    width: 1448px;
+  }
+  
+  .main-chatroom .text-wrapper {
+    color: #043927;
+    font-family: "Lilita One-Regular", Helvetica;
+    font-size: 32px;
+    font-weight: 400;
+    left: 1341px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 975px;
+    width: 103px;
+  }
+  
+  .main-chatroom .overlap {
+    height: 822px;
+    left: 0;
+    position: absolute;
+    top: 202px;
+    width: 880px;
+  }
+  
+  .main-chatroom .your-room {
+    height: 686px;
+    left: 450px;
+    position: absolute;
+    top: 0;
+    width: 430px;
+  }
+  
+  .main-chatroom .overlap-group {
+    background-color: #ffffff;
+    border: 2px solid;
+    border-color: #000000;
+    height: 686px;
+    position: relative;
+    width: 420px;
+  }
+  
+  .main-chatroom .text-wrapper-2 {
+    color: #000000;
+    font-family: "Kanit-Bold", Helvetica;
+    font-size: 30px;
+    font-weight: 700;
+    height: 37px;
+    left: 13px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 13px;
+    width: 284px;
+  }
+  
+  .main-chatroom .overlap-2 {
+    border: 1px solid;
+    border-color: #000000;
+    height: 56px;
+    left: 0;
+    position: absolute;
+    top: 88px;
+    width: 420px;
+  }
+  
+  .main-chatroom .text-wrapper-3 {
+    color: #000000;
+    font-family: "Kanit-Bold", Helvetica;
+    font-size: 25px;
+    font-weight: 700;
+    left: 77px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 6px;
+    width: 176px;
+  }
+  
+  .main-chatroom .ellipse {
+    background-color: #043927;
+    border-radius: 13.24px/12.5px;
+    height: 25px;
+    left: 25px;
+    position: absolute;
+    top: 13px;
+    width: 26px;
+  }
+  
+  .main-chatroom .overlap-3 {
+    border: 1px solid;
+    border-color: #000000;
+    height: 58px;
+    left: 0;
+    position: absolute;
+    top: 144px;
+    width: 420px;
+  }
+  
+  .main-chatroom .text-wrapper-4 {
+    color: #000000;
+    font-family: "Kanit-Bold", Helvetica;
+    font-size: 25px;
+    font-weight: 700;
+    left: 77px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 6px;
+    width: 238px;
+  }
+  
+  .main-chatroom .div-wrapper {
+    border: 1px solid;
+    border-color: #000000;
+    height: 58px;
+    left: 0;
+    position: absolute;
+    top: 202px;
+    width: 420px;
+  }
+  
+  .main-chatroom .text-wrapper-5 {
+    color: #000000;
+    font-family: "Kanit-Regular", Helvetica;
+    font-size: 25px;
+    font-weight: 400;
+    left: 46px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 9px;
+    width: 238px;
+  }
+  
+  .main-chatroom .overlap-4 {
+    border: 1px solid;
+    border-color: #000000;
+    height: 58px;
+    left: 0;
+    position: absolute;
+    top: 260px;
+    width: 420px;
+  }
+  
+  .main-chatroom .text-wrapper-6 {
+    color: #000000;
+    font-family: "Kanit-Regular", Helvetica;
+    font-size: 25px;
+    font-weight: 400;
+    left: 45px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 11px;
+    width: 238px;
+  }
+  
+  .main-chatroom .overlap-wrapper {
+    height: 686px;
+    left: 70px;
+    position: absolute;
+    top: 0;
+    width: 390px;
+  }
+  
+  .main-chatroom .overlap-5 {
+    background-color: #ffffff;
+    border: 2px solid;
+    border-color: #000000;
+    height: 686px;
+    position: relative;
+    width: 380px;
+  }
+  
+  .main-chatroom .text-wrapper-7 {
+    color: #000000;
+    font-family: "Kanit-Bold", Helvetica;
+    font-size: 30px;
+    font-weight: 700;
+    height: 37px;
+    left: -2px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 13px;
+    width: 335px;
+  }
+  
+  .main-chatroom .overlap-6 {
+    border: 1px solid;
+    border-color: #000000;
+    height: 56px;
+    left: 0;
+    position: absolute;
+    top: 88px;
+    width: 380px;
+  }
+  
+  .main-chatroom .text-wrapper-8 {
+    color: #000000;
+    font-family: "Kanit-Regular", Helvetica;
+    font-size: 25px;
+    font-weight: 400;
+    left: 23px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 6px;
+    width: 268px;
+  }
+  
+  .main-chatroom .overlap-group-2 {
+    border: 1px solid;
+    border-color: #000000;
+    height: 58px;
+    left: 0;
+    position: absolute;
+    top: 144px;
+    width: 380px;
+  }
+  
+  .main-chatroom .text-wrapper-9 {
+    color: #000000;
+    font-family: "Kanit-Regular", Helvetica;
+    font-size: 25px;
+    font-weight: 400;
+    left: 23px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 9px;
+    width: 225px;
+  }
+  
+  .main-chatroom .overlap-7 {
+    border: 1px solid;
+    border-color: #000000;
+    height: 58px;
+    left: 0;
+    position: absolute;
+    top: 202px;
+    width: 380px;
+  }
+  
+  .main-chatroom .overlap-8 {
+    border: 1px solid;
+    border-color: #000000;
+    height: 58px;
+    left: 0;
+    position: absolute;
+    top: 260px;
+    width: 380px;
+  }
+  
+  .main-chatroom .text-wrapper-10 {
+    color: #000000;
+    font-family: "Kanit-Regular", Helvetica;
+    font-size: 25px;
+    font-weight: 400;
+    left: 23px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 11px;
+    width: 225px;
+  }
+  
+  .main-chatroom .polygon {
+    height: 246px;
+    left: 0;
+    position: absolute;
+    top: 538px;
+    width: 166px;
+  }
+  
+  .main-chatroom .img {
+    height: 136px;
+    left: 107px;
+    position: absolute;
+    top: 686px;
+    width: 289px;
+  }
+  
+  .main-chatroom .overlap-9 {
+    height: 190px;
+    left: 1081px;
+    position: absolute;
+    top: 202px;
+    width: 321px;
+  }
+  
+  .main-chatroom .room-invitation {
+    height: 190px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 321px;
+  }
+  
+  .main-chatroom .overlap-10 {
+    background-color: #ffffff;
+    border: 2px solid;
+    border-color: #000000;
+    height: 190px;
+    position: relative;
+    width: 317px;
+  }
+  
+  .main-chatroom .text-wrapper-11 {
+    color: #000000;
+    font-family: "Kanit-Bold", Helvetica;
+    font-size: 30px;
+    font-weight: 700;
+    height: 37px;
+    left: -2px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 13px;
+    width: 289px;
+  }
+  
+  .main-chatroom .overlap-group-3 {
+    border: 1px solid;
+    border-color: #000000;
+    height: 102px;
+    left: 0;
+    position: absolute;
+    top: 88px;
+    width: 317px;
+  }
+  
+  .main-chatroom .text-wrapper-12 {
+    color: #000000;
+    font-family: "Kanit-Regular", Helvetica;
+    font-size: 25px;
+    font-weight: 400;
+    left: 21px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 7px;
+    width: 200px;
+  }
+  
+  .main-chatroom .delete-button {
+    height: 32px;
+    left: 208px;
+    position: absolute;
+    top: 147px;
+    width: 96px;
+  }
+  
+  .main-chatroom .overlap-11 {
+    height: 32px;
+    position: relative;
+    width: 94px;
+  }
+  
+  .main-chatroom .rectangle {
+    background-color: #b03a3a;
+    border-radius: 20px;
+    height: 31px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 94px;
+  }
+  
+  .main-chatroom .text-wrapper-13 {
+    color: #ffffff;
+    font-family: "Kanit-Regular", Helvetica;
+    font-size: 20px;
+    font-weight: 400;
+    left: 17px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 1px;
+    width: 77px;
+  }
+  
+  .main-chatroom .publish-button {
+    height: 32px;
+    left: 105px;
+    position: absolute;
+    top: 146px;
+    width: 96px;
+  }
+  
+  .main-chatroom .rectangle-2 {
+    background-color: #3b7f4a;
+    border-radius: 20px;
+    height: 31px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 94px;
+  }
+  
+  .main-chatroom .text-wrapper-14 {
+    color: #ffffff;
+    font-family: "Kanit-Regular", Helvetica;
+    font-size: 20px;
+    font-weight: 400;
+    left: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 1px;
+    width: 74px;
+  }
+  
+  .main-chatroom .header {
+    background-color: transparent;
+    height: 140px;
+    left: -2px;
+    position: absolute;
+    top: 0;
+    width: 1458px;
+  }
+  
+  .main-chatroom .overlap-12 {
+    background-color: #043927;
+    height: 140px;
+    position: relative;
+    width: 1450px;
+  }
+  
+  .main-chatroom .text-wrapper-15 {
+    color: #ffffff;
+    font-family: "Kanit-Regular", Helvetica;
+    font-size: 25px;
+    font-weight: 400;
+    left: 694px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 82px;
+    width: 74px;
+  }
+  
+  .main-chatroom .text-wrapper-16 {
+    color: #ffffff;
+    font-family: "Kanit-Regular", Helvetica;
+    font-size: 25px;
+    font-weight: 400;
+    left: 799px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 81px;
+    width: 96px;
+  }
+  
+  .main-chatroom .text-wrapper-17 {
+    color: #ffffff;
+    font-family: "Kanit-Regular", Helvetica;
+    font-size: 25px;
+    font-weight: 400;
+    left: 1326px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 83px;
+    width: 96px;
+  }
+  
+  .main-chatroom .search {
+    height: 49px;
+    left: 931px;
+    position: absolute;
+    top: 70px;
+    width: 305px;
+  }
+  
+  .main-chatroom .input {
+    background: none;
+    background-image: url(./search-space.svg);
+    background-size: 100% 100%;
+    border: none;
+    color: #727272;
+    font-family: "Kanit-Regular", Helvetica;
+    font-size: 25px;
+    font-weight: 400;
+    height: 49px;
+    letter-spacing: 0;
+    line-height: normal;
+    padding: 0;
+    padding-left: 13px;
+    position: relative;
+    width: 303px;
+  }
+  
+  .main-chatroom .text-wrapper-18 {
+    -webkit-text-stroke: 1px #000000;
+    color: #ffffff;
+    font-family: "Lilita One-Regular", Helvetica;
+    font-size: 64px;
+    font-weight: 400;
+    left: 35px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 50px;
+    width: 503px;
+  }
+  
+  .main-chatroom .overlap-13 {
+    height: 142px;
+    left: 981px;
+    position: absolute;
+    top: 642px;
+    width: 389px;
+  }
+  
+  .main-chatroom .rectangle-3 {
+    height: 48px;
+    left: 93px;
+    position: absolute;
+    top: 90px;
+    width: 296px;
+  }
+  
+  .main-chatroom .rectangle-4 {
+    background-color: #043927;
+    height: 75px;
+    left: 0;
+    position: absolute;
+    top: 60px;
+    width: 76px;
+  }
+  
+  .main-chatroom .text-wrapper-19 {
+    color: #043927;
+    font-family: "Kanit-Bold", Helvetica;
+    font-size: 30px;
+    font-weight: 700;
+    left: 91px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    text-decoration: underline;
+    top: 0;
+    width: 265px;
+  }
+  
+  .main-chatroom .text-wrapper-20 {
+    color: #000000;
+    font-family: "Kanit-Regular", Helvetica;
+    font-size: 30px;
+    font-weight: 400;
+    height: 58px;
+    left: 76px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 38px;
+    width: 265px;
+  }
+  
+  .main-chatroom .text-wrapper-21 {
+    color: #756c6c;
+    font-family: "Kanit-Regular", Helvetica;
+    font-size: 25px;
+    font-weight: 400;
+    height: 58px;
+    left: 38px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 84px;
+    width: 305px;
+  }
+  
+  .main-chatroom .polygon-2 {
+    height: 55px;
+    left: 5px;
+    position: absolute;
+    top: 68px;
+    width: 65px;
+  }
+  
+  .main-chatroom .overlap-14 {
+    height: 98px;
+    left: 981px;
+    position: absolute;
+    top: 789px;
+    width: 389px;
+  }
+  
+  .main-chatroom .rectangle-5 {
+    height: 48px;
+    left: 94px;
+    position: absolute;
+    top: 46px;
+    width: 295px;
+  }
+  
+  .main-chatroom .text-wrapper-22 {
+    color: #756c6c;
+    font-family: "Kanit-Regular", Helvetica;
+    font-size: 25px;
+    font-weight: 400;
+    height: 58px;
+    left: 61px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 40px;
+    width: 313px;
+  }
+  
+  .main-chatroom .rectangle-6 {
+    background-color: #043927;
+    height: 75px;
+    left: 0;
+    position: absolute;
+    top: 11px;
+    width: 76px;
+  }
+  
+  .main-chatroom .text-wrapper-23 {
+    color: #000000;
+    font-family: "Kanit-Regular", Helvetica;
+    font-size: 30px;
+    font-weight: 400;
+    height: 52px;
+    left: 89px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 290px;
+  }
+  
+  .main-chatroom .polygon-3 {
+    height: 55px;
+    left: 5px;
+    position: absolute;
+    top: 19px;
+    width: 65px;
+  }
+  
