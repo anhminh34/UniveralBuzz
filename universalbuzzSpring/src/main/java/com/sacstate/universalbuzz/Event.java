@@ -3,58 +3,56 @@ package com.sacstate.universalbuzz;
 
 import java.time.LocalDate;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.SequenceGenerator;
 import jakarta.persistence.Table;
 
 @Entity
-@Table //(name = "Event")
+@Table(name = "Event")
+@JsonInclude
 public class Event {
     @Id
-    @SequenceGenerator(
-        name = "event_sequence",
-        sequenceName = "event_sequence",
-        allocationSize = 1
-    )
-    @GeneratedValue(
-        strategy = GenerationType.SEQUENCE,
-        generator = "event_sequence"
-    )
-    private String id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
 
     @Column(name = "name", unique = true, updatable = false)
     private String eventName;
-
-    @Column(name = "published", updatable = true)
-    private Boolean published;
-
+    
     private LocalDate eventDate;
     private String eventLocation;
     private String eventDescription;
 
-    public Event(String id, String eventName, Boolean published, LocalDate eventDate, String eventLocation,
+    public Event() {
+    }
+
+    public Event(Long id, String eventName, LocalDate eventDate, String eventLocation,
             String eventDescription) {
         this.id = id;
         this.eventName = eventName;
-        this.published = published;
         this.eventDate = eventDate;
         this.eventLocation = eventLocation;
         this.eventDescription = eventDescription;
     }
 
-    public Event() {
+    public Event(String eventName, LocalDate eventDate, String eventLocation,
+            String eventDescription) {
+        this.eventName = eventName;
+        this.eventDate = eventDate;
+        this.eventLocation = eventLocation;
+        this.eventDescription = eventDescription;
     }
 
-    //Getters and Setters, toString at the bottom
-    public String getId() {
+    // Getters and Setters, toString at the bottom
+    public Long getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -64,14 +62,6 @@ public class Event {
 
     public void setEventName(String eventName) {
         this.eventName = eventName;
-    }
-
-    public Boolean getPublished() {
-        return published;
-    }
-
-    public void setPublished(Boolean published) {
-        this.published = published;
     }
 
     public LocalDate getEventDate() {
@@ -101,6 +91,6 @@ public class Event {
     @Override
     public String toString() {
         return "Event id = " + id + ", name = " + eventName + ", date = " + eventDate + ", location = "
-        + eventLocation + ", description = " + eventDescription + ", published == " + published;
+        + eventLocation + ", description = " + eventDescription;
     }
 }

@@ -1,18 +1,52 @@
+//EventService.java
 package com.sacstate.universalbuzz;
 
-import java.time.LocalDate;
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 @Service
 public class EventService {
-    
+
+    private final EventRepository eventRepository;
+
+    @Autowired
+    public EventService(EventRepository eventRepository) {
+        this.eventRepository = eventRepository;
+    }
+
+    // Find and return every event
+    public List<Event> listAllEvents() {
+        return eventRepository.findAll();
+    }
+
+    public List<Event> sortEvents(String query) {
+        // If a search query is provided, sort by event name
+        if (query != null && !query.isEmpty()) {
+            return eventRepository.findAll(Sort.by(Sort.Direction.ASC, "eventName"));
+        }
+        // If no search query is provided, sort by event date
+        else {
+            return eventRepository.findAll(Sort.by(Sort.Direction.ASC, "eventDate"));
+        }
+    }
+
+    // Test function to iterate over all events and print their details
+    public void printAllEvents() {
+        List<Event> events = eventRepository.findAll();
+        for (Event event : events) {
+            System.out.println(event.toString());
+        }
+    }
+
     public List<Event> getEvents() {
-        return List.of(
-            new Event("1", "Event 1", true, LocalDate.now(), "Location 1", "Description 1"),
-            new Event("2", "Event 2", false, LocalDate.of(2024, 5, 1), "Location 2", "Description 2")
-        );
+        return eventRepository.findAll();
+    }
+
+    public Event saveEvent(Event event) {
+        return eventRepository.save(event);
     }
 
 }
