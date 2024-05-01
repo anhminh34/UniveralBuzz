@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class EventService {
 
-    private final EventRepository eventRepository;
+    public final EventRepository eventRepository;
 
     @Autowired
     public EventService(EventRepository eventRepository) {

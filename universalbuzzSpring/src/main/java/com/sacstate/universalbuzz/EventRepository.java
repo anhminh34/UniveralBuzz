@@ -13,8 +13,10 @@ public interface EventRepository extends JpaRepository<Event, Long> {
     // Find a single event
     Optional<Event> findByEventName(String eventName);
 
+    // Find all events
     List<Event> findAll();
 
+    // Return a list of events
     @Query("SELECT e FROM Event e")
     List<Event> listAllEvents();
 }

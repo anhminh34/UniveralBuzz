@@ -2,18 +2,20 @@
 package com.sacstate.universalbuzz;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.view.RedirectView;
 
-@RestController
+import jakarta.servlet.http.HttpSession;
+
+@Controller
 public class EventController {
 
     @Autowired
-    private final EventService eventService;
+    private EventService eventService;
 
     public EventController(EventService eventService) {
         this.eventService = eventService;
@@ -21,7 +23,7 @@ public class EventController {
 
     // When an event is submitted, save it, and reload the page.
     @PostMapping("/submitEvent")
-    private RedirectView eventSubmission(@ModelAttribute Event event, Model model) {
+    public RedirectView eventSubmission(@ModelAttribute Event event, Model model) {
         // Save the event
         Event eventInserted = eventService.saveEvent(event);
 
@@ -38,13 +40,21 @@ public class EventController {
     }
 
     @GetMapping("/EventsPage")
-    private String eventsPage(Model model) {
+    public RedirectView eventsPage(Model model, HttpSession session) {
+        //session.setAttribute("eventList", eventService.listAllEvents());
+
         // Add events to the model
         model.addAttribute("eventList", eventService.listAllEvents());
         
+        System.out.println("Running eventsPage controller code.");
         eventService.printAllEvents();
         
         // Return the template name
-        return "EventsPage";
+        //return "EventsPage.html";
+
+        RedirectView redirectView = new RedirectView();
+        redirectView.setUrl("/EventsPage.html");
+        
+        return redirectView;
     }
 }
