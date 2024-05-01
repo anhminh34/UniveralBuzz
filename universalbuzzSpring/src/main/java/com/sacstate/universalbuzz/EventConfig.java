@@ -1,12 +1,8 @@
-//EventConfig.java
 package com.sacstate.universalbuzz;
+//EventConfig.java
 
-import java.time.LocalDate;
-import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.CommandLineRunner;
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.ui.Model;
@@ -17,7 +13,10 @@ import org.springframework.web.bind.annotation.PostMapping;
 @EnableJpaRepositories
 public class EventConfig {
 
+    @Autowired
     private EventRepository eventRepository;
+
+    @Autowired
     private final EventService eventService;
 
     @Autowired
@@ -44,25 +43,22 @@ public class EventConfig {
         return "redirect:/EventSubmissionPage.html";
     }
 
-    @Bean
+    // Use this code to manually add events
+    /*@Bean
     CommandLineRunner commandLineRunner(EventRepository repository) {
         // This is for testing, manually adding events into the server.
         System.out.println("Adding to database...");
-        
-        // Call the printAllEvents() method using the eventService instance
-        eventService.printAllEvents();
-        
+
         return args -> {
             repository.saveAll(
                 List.of(
-                    new Event("Event 1", LocalDate.of(2024, 5, 1), "Location 1", "Description 1"),
-                    new Event("Event 2", LocalDate.of(2024, 5, 1), "Location 1", "Description 1")
-                )
-            );
-
-            // Call the printAllEvents() method using the eventService instance
-            eventService.printAllEvents();
-        };
-    }
-
+                        new Event("Event 3", LocalDate.of(2024, 5, 1), "Location 1", "Description 1")//,
+                        //new Event("Event 2", LocalDate.of(2024, 5, 1), "Location 2", "Description 2")
+                    )
+                );
+                
+                // Call the printAllEvents() method using the eventService instance
+                eventService.printAllEvents();
+            };
+    }*/
 }

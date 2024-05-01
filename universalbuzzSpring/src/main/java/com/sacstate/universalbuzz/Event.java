@@ -2,7 +2,6 @@
 package com.sacstate.universalbuzz;
 
 import java.time.LocalDate;
-
 import com.fasterxml.jackson.annotation.JsonInclude;
 
 import jakarta.persistence.Column;
@@ -20,24 +19,28 @@ public class Event {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "name", unique = true, updatable = false)
+    @Column(name = "event_name", unique = true, updatable = false)
     private String eventName;
     
+    @Column(name = "event_date")
     private LocalDate eventDate;
+
+    @Column(name = "event_location")
     private String eventLocation;
+
+    @Column(name = "event_description")
     private String eventDescription;
 
     public Event() {
     }
 
-    public Event(Long id, String eventName, LocalDate eventDate, String eventLocation,
-            String eventDescription) {
+    /*public Event(Long id, String eventName, LocalDate eventDate, String eventLocation, String eventDescription) {
         this.id = id;
         this.eventName = eventName;
         this.eventDate = eventDate;
         this.eventLocation = eventLocation;
         this.eventDescription = eventDescription;
-    }
+    }*/
 
     public Event(String eventName, LocalDate eventDate, String eventLocation,
             String eventDescription) {

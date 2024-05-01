@@ -1,5 +1,6 @@
-//EventRepository.java
 package com.sacstate.universalbuzz;
+//EventRepository.java
+
 
 import java.util.List;
 import java.util.Optional;
@@ -19,4 +20,8 @@ public interface EventRepository extends JpaRepository<Event, Long> {
     // Return a list of events
     @Query("SELECT e FROM Event e")
     List<Event> listAllEvents();
+
+    List<Event> findByeventNameContaining(String name);
+
+    Event save(Event event);
 }

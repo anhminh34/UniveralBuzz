@@ -1,5 +1,6 @@
-//EventServlet.java
 package com.sacstate.universalbuzz;
+//EventServlet.java
+
 
 import java.io.IOException;
 import java.io.PrintWriter;

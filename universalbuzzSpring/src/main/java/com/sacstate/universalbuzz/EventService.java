@@ -1,5 +1,6 @@
-//EventService.java
 package com.sacstate.universalbuzz;
+//EventService.java
+
 
 import java.util.List;
 
@@ -10,9 +11,9 @@ import org.springframework.stereotype.Service;
 @Service
 public class EventService {
 
+    @Autowired
     public final EventRepository eventRepository;
 
-    @Autowired
     public EventService(EventRepository eventRepository) {
         this.eventRepository = eventRepository;
     }
