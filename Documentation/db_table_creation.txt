@@ -1,1 +1,62 @@
-create table Users(userID int not null, firstname varchar(20), lastname varchar(20), username varchar(30) not null, password varchar(30) not null, email varchar(50) not null, address varchar(100));
+CREATE TABLE Users (
+    userId INT PRIMARY KEY AUTOINCREMENT,
+    password VARCHAR(255) NOT NULL,
+    username VARCHAR(255) NOT NULL,
+    firstName VARCHAR(255) NOT NULL,
+    lastName VARCHAR(255) DEFAULT NULL,
+    email VARCHAR(255),
+    birthdate DATE DEFAULT NULL,
+    address VARCHAR(255) DEFAULT NULL,
+    phoneNumber VARCHAR(15) DEFAULT NULL,
+    sex CHAR(1) DEFAULT NULL,
+    class INT DEFAULT NULL,
+    administrator BOOLEAN DEFAULT FALSE,
+);
+
+CREATE TABLE Events (
+    eventId INT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    date DATE DEFAULT NULL,
+    location VARCHAR(255) DEFAULT NULL,
+
+);
+
+CREATE TABLE Comments (
+    commentId INT PRIMARY KEY,
+    eventId INT,
+    userId INT,
+    content TEXT,
+    commentDate DATE,
+    FOREIGN KEY (eventId) REFERENCES Posts(eventId),
+    FOREIGN KEY (userId) REFERENCES Users(userId)
+);
+
+CREATE TABLE Conversations (
+    conversationId INT PRIMARY KEY
+);
+
+CREATE TABLE User_Conversations (
+    userId INT,
+    conversationId INT,
+    PRIMARY KEY (userId, conversationId),
+    FOREIGN KEY (userId) REFERENCES Users(userId),
+    FOREIGN KEY (conversationId) REFERENCES Conversations(conversationId)
+);
+
+CREATE TABLE Messages (
+    messageId INT PRIMARY KEY,
+    conversationId INT,
+    userId INT,
+    content TEXT,
+    messageDate DATE,
+    FOREIGN KEY (conversationId) REFERENCES Conversations(conversationId),
+    FOREIGN KEY (userId) REFERENCES Users(userId)
+);
+
+CREATE TABLE Invitations (
+    inviteId INT PRIMARY KEY,
+    userId INT,
+    conversationId INT,
+    FOREIGN KEY (userId) REFERENCES Users(userId),
+    FOREIGN KEY (conversationId) REFERENCES Conversations(conversationId)
+);

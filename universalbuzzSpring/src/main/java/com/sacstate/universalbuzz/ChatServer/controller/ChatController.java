@@ -1,6 +1,6 @@
-package com.sacstate.universalbuzztest.ChatServer.controller;
+package com.sacstate.universalbuzz.ChatServer.controller;
 
-import com.sacstate.universalbuzztest.ChatServer.controller.model.Message;
+import com.sacstate.universalbuzz.ChatServer.controller.model.Message;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.messaging.handler.annotation.MessageMapping;
 import org.springframework.messaging.handler.annotation.Payload;
@@ -20,7 +20,7 @@ public class ChatController {
 
     @MessageMapping("/private-message")
     public Message recievePrivateMessage(@Payload Message message) {
-        simpMessagingTemplate.convertAndSendToUser(message.getReceiverName(), "/private",message);
+        simpMessagingTemplate.convertAndSendToUser(message.getReceiverName(), "/private", message);
         return message;
     }
 }
