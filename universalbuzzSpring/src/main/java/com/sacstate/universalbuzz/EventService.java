@@ -36,10 +36,12 @@ public class EventService {
 
     // Test function to iterate over all events and print their details
     public void printAllEvents() {
+        System.out.println("----------PRINTING EVENTS----------");
         List<Event> events = eventRepository.findAll();
         for (Event event : events) {
             System.out.println(event.toString());
         }
+        System.out.println("-----------------------------------");
     }
 
     public List<Event> getEvents() {

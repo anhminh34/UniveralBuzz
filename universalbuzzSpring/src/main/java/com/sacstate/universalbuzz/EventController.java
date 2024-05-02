@@ -19,8 +19,8 @@ import jakarta.servlet.http.HttpSession;
 //@ResponseBody
 public class EventController {
  
-    EventService eventService;
-    EventRepository eventRepository;
+    private final EventService eventService;
+    private final EventRepository eventRepository;
 
     @Autowired
     public EventController(EventService eventService, EventRepository eventRepository) {
@@ -35,7 +35,7 @@ public class EventController {
             Event savedEvent = eventService.saveEvent(event);
 
             // Print the saved event for testing
-            System.out.println("Creating a new event: " + savedEvent.toString());
+            System.out.println("\n Creating a new event: " + savedEvent.toString() + "\n");
 
             return new RedirectView("/EventSubmissionPage.html");
 
@@ -49,7 +49,7 @@ public class EventController {
     @PostMapping("/adminRemoveEvent")
     public RedirectView adminRemoveEvent(@RequestParam("eventName") String eventName) {
         try {
-            System.out.println("Admin Page removing an event...");
+            System.out.println("Admin Page removing an event...\n");
             eventService.printAllEvents();
 
             eventService.removeByEventName(eventName); 
