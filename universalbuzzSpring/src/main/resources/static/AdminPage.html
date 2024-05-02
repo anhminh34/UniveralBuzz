@@ -22,7 +22,7 @@
 .titleText {
     position: relative;
     left: 2%;
-    top: 30%;
+    top: 10%;
     font-family:'Lilita One';
     position: absolute;
 }
@@ -57,49 +57,50 @@
     font-family: sans-serif;
     color: #043927;
     position: relative;
-    top: 6%;
-    left: 0%;
 }
 </style>
 
 <html xmlns:th="http://www.thymeleaf.org">
+
 <head>
     <title>Admin Page</title>
     <!--Finds the correct font 'Lilita One'-->
     <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
-    <title>EventsPage</title>
 </head>
+
 <body>
 <!--Sets up the background, position, and color of the top green bar and text-->
 <!--ADD LINKS TO THE OTHER PAGES-->
 <div class="greenHeader">
-    <h1 class="titleText" style="color: white">Events</h1>
+    <h1 class="titleText" style="color: white">Admin</h1>
     <a href="/LoginPage" class="topBarText" style="right: 19%; top: 40%;">Home</a>
     <a href="/AboutPage" class="topBarText" style="right: 12.5%; top: 40%;">About</a>               <!--LINKS TO OTHER PAGES HERE-->
     <a href="/SignOutPage" class="topBarText" style="right: 5%; top: 40%;">Sign Out</a>
 </div>
+
+<div class="deleteEventText" style="width: 265px; height: 45px; left: 78px; top: 312px; position: absolute; text-align: center; color: #043927; font-size: 30px; font-family: Lilita One; font-weight: 400; text-decoration: underline; word-wrap: break-word">Delete an Event</div>
 
 <!--Create a tan rectangle on the left side of the screen, should move down the whole page-->
 <!--Contains a filter for the events page and the links to the event submission page-->
 <div class="tanRectangle">
     <input type="text" class="searchBar" placeholder="Filter">
     <!--ADD LINKS TO THE OTHER PAGES-->
-    <a href="/EventSubmissionPage" class="submitEditButtons" style="position:relative;">Submit New Event</a>                                                                     <!--AND HERE-->
+    <a href="/EventSubmissionPage.html" class="submitEditButtons" style="white-space:nowrap; top: 10%; left:2%;">Submit New Event</a>            <!--AND HERE-->
 </div>
 
 <!-- If the user submits "Delete Event", call "adminRemoveEvent" -->
 <form action="/adminRemoveEvent" method="post">
-    <div style="position:absolute; top:40%; right:60%">
-        <input type="text" name="eventName" placeholder="Delete an event">
-        <button type="submit">Submit</button>
+    <div style="position:absolute; top:30%; right:50%;">
+        <input type="text" name="eventName" placeholder="Delete an event" style="width: 402px; height: 53px; width: 402px; height: 53px;">
+        <button type="submit" style="height:55px; font-size: 30px; font-family: Lilita One; font-weight: 400; background: #043927">Submit</button>
     </div>
 </form>
 
 <!-- If the user submits "Add Admin", call "adminAddAdmin" -->
 <form action="/adminAddAdmin" method="post">
-    <div>
-        <input type="text" name="addAdmin" placeholder="Add an admin">
-        <button type="submit">Submit</button>
+    <div style="position:absolute; top:60%; right:50%;">
+        <input type="text" name="addAdmin" placeholder="Add an admin" style="width: 402px; height: 53px; width: 402px; height: 53px;">
+        <button type="submit" style="height:55px; font-size: 30px; font-family: Lilita One; font-weight: 400; background: #043927">Submit</button>
     </div>
 </form>
 

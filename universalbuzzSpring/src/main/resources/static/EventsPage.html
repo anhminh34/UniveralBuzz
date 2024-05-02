@@ -22,7 +22,7 @@
 .titleText {
     position: relative;
     left: 2%;
-    top: 30%;
+    top: 10%;
     font-family:'Lilita One';
 }
 
@@ -99,23 +99,6 @@
     top: 15%;
     left: 22%;
 }
-
-/* Your custom styles for event cards */
-.event-card {
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            padding: 10px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        .event-card h2 {
-            margin-top: 0;
-        }
-
-        .event-card p {
-            margin-bottom: 5px;
-        }
 </style>
 
 <html lang="en" xmlns="http://www.thymeleaf.org">
@@ -130,18 +113,20 @@
         <!--ADD LINKS TO THE OTHER PAGES-->
         <div class="greenHeader">
             <h1 class="titleText" style="color: white">Events</h1>
-            <a href="/universalbuzzSpring\src\main\resources\static\LoginPage.html" class="topBarText" style="right: 19%; top: 40%;">Home</a>
-            <a href="/universalbuzzSpring\src\main\resources\static\AboutPage.html" class="topBarText" style="right: 12.5%; top: 40%;">About</a>               <!--LINKS TO OTHER PAGES HERE-->
-            <a href="/universalbuzzSpring\src\main\resources\static\SignOutPage.html" class="topBarText" style="right: 5%; top: 40%;">Sign Out</a>
+            <a href="/LoginPage.html" class="topBarText" style="right: 19%; top: 40%;">Home</a>
+            <a href="/AboutPage.html" class="topBarText" style="right: 12.5%; top: 40%;">About</a>               <!--LINKS TO OTHER PAGES HERE-->
+            <a href="/SignOutPage.html" class="topBarText" style="right: 5%; top: 40%;">Sign Out</a>
         </div>
         
         <!--Create a tan rectangle on the left side of the screen, should move down the whole page-->
         <!--Contains a filter for the events page and the links to the event submission page-->
         <div class="tanRectangle">
             <input type="text" class="searchBar" placeholder="Filter">
-            <!--ADD LINKS TO THE OTHER PAGES-->
-            <a href="/EventSubmissionPage" class="submitEditButtons">Submit New Event</a>
-            <a href="/AdminPage" class="submitEditButtons">Edit Events</a>
+            <!-- ADD LINKS TO THE OTHER PAGES -->
+            <div style="margin-top: 10px;">
+                <div><a href="/EventSubmissionPage.html" class="submitEditButtons" style="white-space:nowrap; top:20%;">Submit New Event</a></div>
+                <div><a href="/AdminPage.html" class="submitEditButtons" style="white-space:nowrap; top:30%;">Edit Events</a></div>
+            </div>
         </div>
 
         <div th:if="${not #lists.isEmpty(eventList)}">
