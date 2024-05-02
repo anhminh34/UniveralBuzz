@@ -1,0 +1,521 @@
+.profile {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .profile .overlap-wrapper {
+    background-color: #ffffff;
+    overflow-x: hidden;
+    width: 1480px;
+    height: 1206px;
+  }
+  
+  .profile .overlap {
+    position: relative;
+    width: 1500px;
+    height: 1206px;
+  }
+  
+  .profile .overlap-group {
+    position: absolute;
+    width: 1500px;
+    height: 1206px;
+    top: 0;
+    left: 0;
+  }
+  
+  .profile .sidebar {
+    position: absolute;
+    width: 256px;
+    height: 1206px;
+    top: 0;
+    left: 0;
+    background-color: #043927;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-color: #e0e0e0;
+  }
+  
+  .profile .list {
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+    height: 40px;
+    align-items: flex-start;
+    position: absolute;
+    top: 82px;
+    left: 8px;
+  }
+  
+  .profile .menu-item {
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    height: 40px;
+  }
+  
+  .profile .div {
+    width: 240px;
+    position: absolute;
+    top: 93px;
+    left: 0;
+    background-color: #ffffff;
+    display: flex;
+    height: 40px;
+    align-items: center;
+    gap: 16px;
+    padding: 0px 16px;
+    border-radius: 8px;
+  }
+  
+  .profile .img {
+    position: relative;
+    width: 24px;
+    height: 24px;
+  }
+  
+  .profile .text-wrapper {
+    position: relative;
+    flex: 1;
+    font-family: var(--small-text-font-family);
+    font-weight: var(--small-text-font-weight);
+    color: #000000;
+    font-size: var(--small-text-font-size);
+    letter-spacing: var(--small-text-letter-spacing);
+    line-height: var(--small-text-line-height);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    font-style: var(--small-text-font-style);
+  }
+  
+  .profile .menu-item-2 {
+    width: 240px;
+    position: absolute;
+    top: 47px;
+    left: 0;
+    background-color: #ffffff;
+    display: flex;
+    height: 40px;
+    align-items: center;
+    gap: 16px;
+    padding: 0px 16px;
+    border-radius: 8px;
+  }
+  
+  .profile .menu-item-3 {
+    width: 240px;
+    position: absolute;
+    top: 222px;
+    left: 8px;
+    background-color: #ffffff;
+    display: flex;
+    height: 40px;
+    align-items: center;
+    gap: 16px;
+    padding: 0px 16px;
+    border-radius: 8px;
+  }
+  
+  .profile .menu-item-4 {
+    width: 240px;
+    position: absolute;
+    top: 269px;
+    left: 8px;
+    background-color: #ffffff;
+    display: flex;
+    height: 40px;
+    align-items: center;
+    gap: 16px;
+    padding: 0px 16px;
+    border-radius: 8px;
+  }
+  
+  .profile .menu-item-5 {
+    width: 240px;
+    position: absolute;
+    top: 316px;
+    left: 8px;
+    background-color: #ffffff;
+    display: flex;
+    height: 40px;
+    align-items: center;
+    gap: 16px;
+    padding: 0px 16px;
+    border-radius: 8px;
+  }
+  
+  .profile .image {
+    position: relative;
+    width: 25.04px;
+    height: 24px;
+    object-fit: cover;
+  }
+  
+  .profile .text-wrapper-2 {
+    position: absolute;
+    height: 30px;
+    top: 23px;
+    left: 24px;
+    font-family: "Lilita One-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 20px;
+    letter-spacing: -0.2px;
+    line-height: 30px;
+    white-space: nowrap;
+  }
+  
+  .profile .menu-item-6 {
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    background-color: #f7f7f7;
+    display: flex;
+    height: 40px;
+    align-items: center;
+    gap: 16px;
+    padding: 0px 16px;
+    border-radius: 8px;
+  }
+  
+  .profile .text-wrapper-3 {
+    position: relative;
+    flex: 1;
+    color: #000000;
+    font-size: 16px;
+    line-height: 24px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    font-family: "Lilita One-Regular", Helvetica;
+    font-weight: 400;
+    letter-spacing: 0;
+  }
+  
+  .profile .menu-item-7 {
+    width: 240px;
+    position: absolute;
+    top: 128px;
+    left: 8px;
+    background-color: #ffffff;
+    display: flex;
+    height: 40px;
+    align-items: center;
+    gap: 16px;
+    padding: 0px 16px;
+    border-radius: 8px;
+  }
+  
+  .profile .menu-item-8 {
+    width: 240px;
+    position: absolute;
+    top: 174px;
+    left: 8px;
+    background-color: #ffffff;
+    display: flex;
+    height: 40px;
+    align-items: center;
+    gap: 16px;
+    padding: 0px 16px;
+    border-radius: 8px;
+  }
+  
+  .profile .menu-item-9 {
+    width: 240px;
+    position: absolute;
+    top: 220px;
+    left: 8px;
+    background-color: #ffffff;
+    display: flex;
+    height: 40px;
+    align-items: center;
+    gap: 16px;
+    padding: 0px 16px;
+    border-radius: 8px;
+  }
+  
+  .profile .text-wrapper-4 {
+    position: absolute;
+    height: 36px;
+    top: 20px;
+    left: 24px;
+    font-family: "Lilita One-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 24px;
+    letter-spacing: -0.24px;
+    line-height: 36px;
+    white-space: nowrap;
+  }
+  
+  .profile .profile-banner {
+    position: absolute;
+    width: 1232px;
+    height: 163px;
+    top: 82px;
+    left: 252px;
+    object-fit: cover;
+  }
+  
+  .profile .mask-group {
+    position: absolute;
+    width: 215px;
+    height: 205px;
+    top: 134px;
+    left: 779px;
+  }
+  
+  .profile .text-wrapper-5 {
+    position: absolute;
+    width: 120px;
+    top: 241px;
+    left: 1380px;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #c50000;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: 30px;
+  }
+  
+  .profile .frame {
+    position: absolute;
+    width: 1224px;
+    height: 82px;
+    top: 0;
+    left: 256px;
+    background-color: #ffffff;
+  }
+  
+  .profile .text-wrapper-6 {
+    position: absolute;
+    width: 203px;
+    top: 16px;
+    left: 29px;
+    font-family: "Lilita One-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 32px;
+    letter-spacing: 0;
+    line-height: 48px;
+  }
+  
+  .profile .text-wrapper-7 {
+    position: absolute;
+    width: 183px;
+    top: 379px;
+    left: 795px;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #000000;
+    font-size: 32px;
+    letter-spacing: 0;
+    line-height: 48px;
+  }
+  
+  .profile .overlap-group-2 {
+    position: absolute;
+    width: 201px;
+    height: 36px;
+    top: 451px;
+    left: 273px;
+  }
+  
+  .profile .text-wrapper-8 {
+    position: absolute;
+    width: 201px;
+    top: 0;
+    left: 0;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #000000;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: 36px;
+  }
+  
+  .profile .text-wrapper-9 {
+    position: absolute;
+    width: 154px;
+    top: 451px;
+    left: 1088px;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #000000;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: 36px;
+  }
+  
+  .profile .p {
+    position: absolute;
+    width: 354px;
+    top: 499px;
+    left: 1092px;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #000000;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: 30px;
+  }
+  
+  .profile .text-wrapper-10 {
+    position: absolute;
+    width: 466px;
+    top: 486px;
+    left: 548px;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #000000;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: 30px;
+  }
+  
+  .profile .text-wrapper-11 {
+    position: absolute;
+    width: 466px;
+    top: 537px;
+    left: 548px;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #000000;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: 30px;
+  }
+  
+  .profile .text-wrapper-12 {
+    position: absolute;
+    width: 466px;
+    top: 582px;
+    left: 548px;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #000000;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: 30px;
+  }
+  
+  .profile .text-wrapper-13 {
+    position: absolute;
+    width: 466px;
+    top: 638px;
+    left: 548px;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #000000;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: 30px;
+  }
+  
+  .profile .text-wrapper-14 {
+    position: absolute;
+    width: 273px;
+    top: 344px;
+    left: 750px;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #000000;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: 30px;
+  }
+  
+  .profile .ellipse {
+    top: 492px;
+    background-color: #0c6647;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 491px;
+    border-radius: 12.5px;
+  }
+  
+  .profile .ellipse-2 {
+    top: 588px;
+    background-color: #0c6647;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 491px;
+    border-radius: 12.5px;
+  }
+  
+  .profile .ellipse-3 {
+    top: 540px;
+    background-color: #d9d9d9;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 491px;
+    border-radius: 12.5px;
+  }
+  
+  .profile .ellipse-4 {
+    top: 636px;
+    background-color: #d9d9d9;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 491px;
+    border-radius: 12.5px;
+  }
+  
+  .profile .text-wrapper-15 {
+    position: absolute;
+    width: 103px;
+    top: 1160px;
+    left: 1386px;
+    color: #043927;
+    font-size: 32px;
+    line-height: normal;
+    font-family: "Lilita One-Regular", Helvetica;
+    font-weight: 400;
+    letter-spacing: 0;
+  }
+  
+  .profile .element-secondary-button {
+    all: unset;
+    box-sizing: border-box;
+    display: inline-flex;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 0px 16px;
+    position: absolute;
+    top: 432px;
+    left: 854px;
+    background-color: #eeeeee;
+    border-radius: 8px;
+  }
+  
+  .profile .text-wrapper-16 {
+    position: relative;
+    width: fit-content;
+    font-family: var(--small-text-font-family);
+    font-weight: var(--small-text-font-weight);
+    color: #000000;
+    font-size: var(--small-text-font-size);
+    letter-spacing: var(--small-text-letter-spacing);
+    line-height: var(--small-text-line-height);
+    white-space: nowrap;
+    font-style: var(--small-text-font-style);
+  }
+/*Edited Part*/
+.active-btn{
+  background-color: #043927;
+  transition: all .4s ease-in-out;
+}
