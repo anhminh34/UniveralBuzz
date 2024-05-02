@@ -1,5 +1,5 @@
 import React from "react";
-import "./Profile.css";
+import "./Settings.css";
 
 export const Settings = () => {
   return (
@@ -88,3 +88,5 @@ export const Settings = () => {
     </div>
   );
 };
+
+export default Settings;

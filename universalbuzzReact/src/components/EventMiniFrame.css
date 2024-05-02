@@ -1,0 +1,95 @@
+.monday-meditation-april1 {
+   position: absolute;
+   top: 49px;
+   left: 39px;
+   font-size: var(--font-size-21xl);
+   text-decoration: underline;
+   font-weight: 600;
+   display: inline-block;
+   width: 791px;
+   height: 45px;
+}
+.in-these-sessions {
+   position: absolute;
+   top: 167px;
+   left: 39px;
+   color: var(--color-black);
+   display: inline-block;
+   width: 457px;
+   height: 311px;
+}
+.monday-april-1st {
+   position: absolute;
+   top: 118px;
+   left: 39px;
+   display: inline-block;
+   color: var(--color-black);
+   white-space: pre-wrap;
+   width: 475px;
+   height: 49px;
+}
+.x {
+   position: absolute;
+   top: 19px;
+   left: 912px;
+   font-size: var(--font-size-13xl);
+   font-family: var(--font-lilita-one);
+   display: inline-block;
+   width: 27px;
+   height: 45px;
+}
+.image-5-icon {
+   position: absolute;
+   top: 167px;
+   left: 514px;
+   width: 374px;
+   height: 258px;
+   object-fit: cover;
+}
+.publish-button-child {
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   border-radius: var(--br-xl);
+   background-color: #3c804a;
+   width: 139px;
+   height: 42px;
+}
+.register {
+   position: absolute;
+   top: 1.02px;
+   left: 21.3px;
+   display: inline-block;
+   width: 108.7px;
+   height: 43px;
+}
+.publish-button {
+   position: absolute;
+   top: 519px;
+   left: 39px;
+   width: 139px;
+   height: 44px;
+   color: var(--color-white);
+}
+.bookmark-icon {
+   position: absolute;
+   top: 59px;
+   left: 812px;
+   width: 52px;
+   height: 45px;
+   overflow: hidden;
+}
+.event-mini-frame {
+   width: 954px;
+   position: relative;
+   border-radius: var(--br-xl);
+   background-color: var(--color-white);
+   height: 595px;
+   overflow: hidden;
+   max-width: 100%;
+   max-height: 100%;
+   text-align: left;
+   font-size: var(--font-size-6xl);
+   color: var(--color-darkslategray);
+   font-family: var(--font-kanit);
+}

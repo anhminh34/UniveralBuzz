@@ -492,7 +492,7 @@
   
   .main-chatroom .input {
     background: none;
-    background-image: url(./search-space.svg);
+    /*background-image: url(./img/homepage/search-space.svg);*/
     background-size: 100% 100%;
     border: none;
     color: #727272;

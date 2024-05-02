@@ -1,0 +1,689 @@
+.footer-child {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: var(--color-darkslategray);
+  width: 1440px;
+  height: 226px;
+}
+.about-us {
+  position: absolute;
+  top: 52px;
+  left: 57px;
+  display: inline-block;
+  width: 361px;
+  height: 119px;
+}
+.follow-us {
+  position: absolute;
+  top: 48px;
+  left: 1003px;
+  display: inline-block;
+  width: 337px;
+  height: 123px;
+}
+.contact-us {
+  margin: 0;
+}
+.intlinfocsusedu2 {
+  text-decoration: underline;
+}
+.intlinfocsusedu1 {
+  color: inherit;
+}
+.contact-us-phone-container {
+  position: absolute;
+  top: 52px;
+  left: 505px;
+  display: inline-block;
+  width: 295px;
+  height: 119px;
+}
+.footer {
+  position: absolute;
+  top: 1978px;
+  left: 0px;
+  width: 1440px;
+  height: 226px;
+  font-size: var(--font-size-6xl);
+  color: var(--color-white);
+}
+.event-border-icon {
+  position: absolute;
+  top: 64px;
+  left: 0px;
+  width: 1451px;
+  height: 466px;
+}
+.more-events {
+  position: absolute;
+  top: 480px;
+  left: 796px;
+  font-size: var(--font-size-11xl);
+  font-weight: 600;
+  color: var(--color-white);
+  display: inline-block;
+  width: 179px;
+  height: 50px;
+  cursor: pointer;
+}
+.events-rectangle-icon {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-radius: var(--br-xl);
+  width: 271px;
+  height: 358px;
+}
+.event1 {
+  position: absolute;
+  top: 254px;
+  left: 14px;
+  display: inline-block;
+  width: 265.2px;
+  height: 115.9px;
+}
+.date {
+  position: absolute;
+  top: 209px;
+  left: 14px;
+  display: inline-block;
+  width: 158.4px;
+  height: 46.2px;
+}
+.event-3 {
+  position: absolute;
+  top: 110px;
+  left: 649px;
+  width: 279.2px;
+  height: 369.9px;
+}
+.adaptive-sports-wheelchair {
+  position: absolute;
+  top: 244.94px;
+  left: 2px;
+  display: inline-block;
+  width: 265.7px;
+  height: 112.8px;
+}
+.tues-april-2 {
+  position: absolute;
+  top: 206px;
+  left: 2px;
+  display: inline-block;
+  width: 158.8px;
+  height: 45px;
+}
+.event-image-2-icon {
+  position: absolute;
+  top: 36px;
+  left: 2px;
+  width: 263px;
+  height: 155px;
+  object-fit: cover;
+}
+.event-2 {
+  position: absolute;
+  top: 110px;
+  left: 345px;
+  width: 271px;
+  height: 358px;
+}
+.events-rectangle-icon2 {
+  position: absolute;
+  top: 0px;
+  left: 1px;
+  border-radius: var(--br-xl);
+  width: 271px;
+  height: 358px;
+}
+.monday-meditation-april {
+  position: absolute;
+  top: 241.24px;
+  left: 6px;
+  font-weight: 500;
+  display: inline-block;
+  width: 247.7px;
+  height: 89.1px;
+}
+.mon-april-1 {
+  position: absolute;
+  top: 200.36px;
+  left: 5px;
+  display: inline-block;
+  width: 172px;
+  height: 45.2px;
+}
+.event-image-1-icon {
+  position: absolute;
+  top: 32px;
+  left: 0px;
+  width: 270px;
+  height: 155px;
+  object-fit: cover;
+}
+.event-1 {
+  position: absolute;
+  top: 110px;
+  left: 39px;
+  width: 272px;
+  height: 358px;
+  cursor: pointer;
+}
+.upcoming-events {
+  position: absolute;
+  top: 0px;
+  left: 39px;
+  font-size: var(--font-size-21xl);
+  display: inline-block;
+  width: 390px;
+  height: 64px;
+}
+.event {
+  position: absolute;
+  top: 1404px;
+  left: -6px;
+  width: 1451px;
+  height: 530px;
+  font-size: var(--font-size-5xl);
+}
+.news-border-icon {
+  position: absolute;
+  top: 64px;
+  left: 0px;
+  width: 1451px;
+  height: 464px;
+}
+.more-news {
+  position: absolute;
+  top: 467px;
+  left: 798px;
+  font-size: var(--font-size-11xl);
+  font-weight: 600;
+  color: var(--color-white);
+  display: inline-block;
+  width: 179px;
+  height: 50px;
+  cursor: pointer;
+}
+.content {
+  position: absolute;
+  top: 229.08px;
+  left: 13.21px;
+  display: inline-block;
+  width: 255.6px;
+  height: 115.9px;
+}
+.news-31 {
+  position: absolute;
+  top: 159.02px;
+  left: 13.13px;
+  display: inline-block;
+  width: 152.7px;
+  height: 46.2px;
+}
+.news-image-3-icon {
+  position: absolute;
+  top: 13px;
+  left: 2px;
+  width: 256px;
+  height: 133px;
+  object-fit: cover;
+}
+.news-3 {
+  position: absolute;
+  top: 100px;
+  left: 643px;
+  width: 271px;
+  height: 358px;
+}
+.content1 {
+  position: absolute;
+  top: 237.08px;
+  left: 12.73px;
+  display: inline-block;
+  width: 245.5px;
+  height: 115.9px;
+}
+.news-21 {
+  position: absolute;
+  top: 167.02px;
+  left: 12.66px;
+  display: inline-block;
+  width: 146.7px;
+  height: 46.2px;
+}
+.news-image-2-icon {
+  position: absolute;
+  top: 13px;
+  left: 7px;
+  width: 256px;
+  height: 133px;
+  object-fit: cover;
+}
+.news-2 {
+  position: absolute;
+  top: 100px;
+  left: 339px;
+  width: 271px;
+  height: 358px;
+}
+.news-content {
+  position: absolute;
+  top: 235.69px;
+  left: 11.6px;
+  font-weight: 500;
+  display: inline-block;
+  width: 230.5px;
+  height: 91.5px;
+}
+.news-11 {
+  position: absolute;
+  top: 171.07px;
+  left: 12.01px;
+  display: inline-block;
+  width: 160.1px;
+  height: 46.5px;
+}
+.news-image-1-icon {
+  position: absolute;
+  top: 18px;
+  left: 2px;
+  width: 256px;
+  height: 133px;
+  object-fit: cover;
+}
+.news-1 {
+  position: absolute;
+  top: 95px;
+  left: 39px;
+  width: 271px;
+  height: 358px;
+}
+.news {
+  position: absolute;
+  top: 848px;
+  left: 0px;
+  width: 1451px;
+  height: 528px;
+  font-size: var(--font-size-5xl);
+}
+.campus-resources-border {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 455px;
+  height: 1450px;
+}
+.map-link-border {
+  position: absolute;
+  top: 457px;
+  left: 2px;
+  border-radius: var(--br-xl);
+  width: 387px;
+  height: 62px;
+}
+.find-us-on {
+  position: absolute;
+  top: 470px;
+  left: 56px;
+  font-weight: 600;
+  color: var(--color-white);
+  display: inline-block;
+  width: 290px;
+  height: 49px;
+  cursor: pointer;
+}
+.international-programs-library-container {
+  position: absolute;
+  top: 337px;
+  left: 0px;
+  display: inline-block;
+  width: 358px;
+  height: 114px;
+}
+.location1 {
+  position: absolute;
+  top: 288px;
+  left: 2px;
+  font-size: var(--font-size-11xl);
+  display: inline-block;
+  width: 341px;
+  height: 41px;
+}
+.campus-image-icon {
+  position: absolute;
+  top: 0px;
+  left: 4px;
+  width: 392px;
+  height: 285px;
+  object-fit: cover;
+}
+.location {
+  position: absolute;
+  top: 633px;
+  left: 29px;
+  width: 396px;
+  height: 519px;
+  font-size: var(--font-size-6xl);
+}
+.clubs-border-icon {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 378.2px;
+  height: 81.4px;
+}
+.clubs-organizations1 {
+  position: absolute;
+  top: 21.86px;
+  left: 14px;
+  display: inline-block;
+  width: 293.8px;
+  height: 63.1px;
+}
+.clubs-organizations {
+  position: absolute;
+  top: 513.69px;
+  left: 39px;
+  width: 378.2px;
+  height: 85px;
+}
+.housing-information1 {
+  position: absolute;
+  top: 18.22px;
+  left: 14px;
+  display: inline-block;
+  width: 293.8px;
+  height: 63.1px;
+}
+.housing-information {
+  position: absolute;
+  top: 411.68px;
+  left: 39px;
+  width: 378.2px;
+  height: 81.4px;
+  cursor: pointer;
+}
+.financial-aid1 {
+  position: absolute;
+  top: 20.64px;
+  left: 14px;
+  display: inline-block;
+  width: 179.1px;
+  height: 58.3px;
+}
+.financial-aid {
+  position: absolute;
+  top: 309.67px;
+  left: 39px;
+  width: 378.2px;
+  height: 81.4px;
+  cursor: pointer;
+}
+.scholarships1 {
+  position: absolute;
+  top: 19.43px;
+  left: 14px;
+  display: inline-block;
+  width: 179.1px;
+  height: 58.3px;
+}
+.scholarships {
+  position: absolute;
+  top: 207.66px;
+  left: 39px;
+  width: 378.2px;
+  height: 81.4px;
+  cursor: pointer;
+}
+.international-services1 {
+  position: absolute;
+  top: 17px;
+  left: 14px;
+  display: inline-block;
+  width: 336px;
+  height: 55.9px;
+  cursor: pointer;
+}
+.international-services {
+  position: absolute;
+  top: 105.65px;
+  left: 39px;
+  width: 378.2px;
+  height: 81.4px;
+}
+.campus-resources1 {
+  position: absolute;
+  top: 31.57px;
+  left: 16px;
+  font-size: 36px;
+  display: inline-block;
+  width: 354.9px;
+  height: 74.1px;
+}
+.campus-resources {
+  position: absolute;
+  top: 528px;
+  left: 969px;
+  width: 455px;
+  height: 1450px;
+  cursor: pointer;
+  font-size: var(--font-size-9xl);
+}
+.settings-border {
+  position: absolute;
+  top: 3px;
+  left: 0px;
+  background-color: var(--color-gainsboro);
+  width: 578px;
+  height: 46px;
+}
+.settings-button1 {
+  position: absolute;
+  top: 0px;
+  right: 164.7px;
+  display: inline-block;
+  width: 353.3px;
+  height: 49.2px;
+}
+.settings-button {
+  position: absolute;
+  top: 763px;
+  left: 47px;
+  width: 578px;
+  height: 49.2px;
+  cursor: pointer;
+  color: var(--color-darkslategray);
+}
+.chatrooms {
+  position: absolute;
+  top: 0px;
+  right: 161.7px;
+  display: inline-block;
+  width: 353.3px;
+  height: 49.2px;
+}
+.chatroom-button {
+  position: absolute;
+  top: 699px;
+  left: 47px;
+  width: 578px;
+  height: 49.2px;
+  cursor: pointer;
+  color: var(--color-darkslategray);
+}
+.profile-border {
+  position: absolute;
+  top: 1px;
+  left: 0px;
+  background-color: var(--color-gainsboro);
+  width: 578px;
+  height: 49px;
+}
+.profile {
+  position: absolute;
+  top: 0px;
+  right: 151.7px;
+  display: inline-block;
+  width: 353.3px;
+  height: 49.2px;
+}
+.profile-button {
+  position: absolute;
+  top: 638px;
+  left: 47px;
+  width: 578px;
+  height: 50px;
+  cursor: pointer;
+  color: var(--color-darkslategray);
+}
+.welcome-name {
+  position: absolute;
+  top: 557px;
+  left: 42px;
+  font-size: 46px;
+  display: inline-block;
+  width: 547px;
+  height: 77px;
+}
+.back {
+  position: absolute;
+  top: 2159px;
+  left: 1321px;
+  font-size: var(--font-size-13xl);
+  font-family: var(--font-lilita-one);
+  color: var(--color-white);
+  display: inline-block;
+  width: 103px;
+  height: 45px;
+  cursor: pointer;
+}
+.image-4-icon {
+  position: absolute;
+  top: 639px;
+  left: 52px;
+  width: 49.2px;
+  height: 49px;
+  object-fit: contain;
+}
+.settings-icon {
+  position: absolute;
+  top: 766px;
+  left: 49px;
+  width: 50px;
+  height: 46px;
+  overflow: hidden;
+}
+.message-circle-icon {
+  position: absolute;
+  top: 702px;
+  left: 47px;
+  width: 54px;
+  height: 46px;
+  overflow: hidden;
+}
+.header-image-2-icon {
+  position: absolute;
+  top: 156px;
+  left: 747px;
+  width: 731px;
+  height: 372px;
+  object-fit: cover;
+}
+.header-image-1-icon {
+  position: absolute;
+  top: 156px;
+  left: 0px;
+  width: 747px;
+  height: 372px;
+  object-fit: cover;
+}
+.header-child {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: var(--color-darkslategray);
+  width: 1440px;
+  height: 140px;
+}
+.universal-buzz {
+  position: absolute;
+  top: 51px;
+  left: 34px;
+  font-size: 64px;
+  font-family: var(--font-lilita-one);
+  display: inline-block;
+  width: 500px;
+  height: 83px;
+  text-shadow: 1px 0 0 #000, 0 1px 0 #000, -1px 0 0 #000, 0 -1px 0 #000;
+}
+.home {
+  position: absolute;
+  top: 82px;
+  left: 689px;
+  display: inline-block;
+  width: 73px;
+  height: 34px;
+}
+.about {
+  position: absolute;
+  top: 81px;
+  left: 793px;
+  display: inline-block;
+  width: 95px;
+  height: 35px;
+  cursor: pointer;
+}
+.sign-out {
+  position: absolute;
+  top: 83px;
+  left: 1317px;
+  display: inline-block;
+  width: 95px;
+  height: 35px;
+  cursor: pointer;
+}
+.search-space-icon {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 301px;
+  height: 49px;
+}
+.search1 {
+  position: absolute;
+  top: 9px;
+  left: 13px;
+  display: inline-block;
+  width: 183px;
+  height: 39px;
+}
+.search {
+  position: absolute;
+  top: 70px;
+  left: 925px;
+  width: 301px;
+  height: 49px;
+  color: #737373;
+}
+.header {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 1440px;
+  height: 140px;
+  font-size: var(--font-size-6xl);
+  color: var(--color-white);
+}
+.homepage {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  height: 2204px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-16xl);
+  color: var(--color-black);
+  font-family: var(--font-kanit);
+}

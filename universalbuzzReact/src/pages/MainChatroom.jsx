@@ -1,5 +1,5 @@
 import React from "react";
-import "./style.css";
+import "./MainChatroom.css";
 
 export const MainChatroom = () => {
   return (
@@ -98,3 +98,5 @@ export const MainChatroom = () => {
     </div>
   );
 };
+
+export default MainChatroom;

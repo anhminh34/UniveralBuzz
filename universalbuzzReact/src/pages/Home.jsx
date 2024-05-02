@@ -1,201 +1,234 @@
-import React from "react";
-import "./styleHome.css";
+import { useState, useCallback } from 'react';
+import { useNavigate } from 'react-router-dom';
+import EventMiniFrame from "../components/EventMiniFrame";
+import PortalPopup from "../components/PortalPopup";
+import './Home.css';
 
-export const Homepage = () => {
-  return (
-    <div className="homepage">
-      <div className="div">
-        <img className="image" alt="Image" src="/img/image-2.png" />
-        <img className="global-lounge" alt="Global lounge" src="/img/global-lounge-1.png" />
-        <div className="overlap">
-          <footer className="footer">
-            <div className="overlap-group">
-              <div className="text-wrapper">About Us:</div>
-              <div className="text-wrapper-2">Follow Us:</div>
-              <p className="contact-us-phone">
-                <span className="span">
-                  Contact Us:
-                  <br />
-                  Phone: (916) 278-6686
-                  <br />
-                </span>
-                <a href="mailto:intlinfo@csus.edu" rel="noopener noreferrer" target="_blank">
-                  <span className="text-wrapper-3">intlinfo@csus.edu</span>
-                </a>
-              </p>
-            </div>
-          </footer>
-          <div className="text-wrapper-4">BACK</div>
-        </div>
-        <div className="overlap-2">
-          <div className="overlap-3">
-            <div className="event">
-              <div className="overlap-4">
-                <div className="overlap-group-wrapper">
-                  <div className="overlap-group-2">
-                    <p className="p">Monday Meditation: April (Early Morning)</p>
-                    <div className="text-wrapper-5">Mon, April 1</div>
-                  </div>
-                </div>
-                <div className="overlap-wrapper">
-                  <div className="overlap-5">
-                    <div className="text-wrapper-6">Adaptive Sports: Wheelchair Rugby</div>
-                    <div className="text-wrapper-7">Tues, April 2</div>
-                  </div>
-                </div>
-                <div className="overlap-6">
-                  <div className="div-wrapper">
-                    <div className="overlap-7">
-                      <div className="rectangle" />
-                      <div className="text-wrapper-8">Event</div>
-                      <div className="text-wrapper-9">Date</div>
-                    </div>
-                  </div>
-                  <div className="text-wrapper-10">More Events</div>
-                </div>
-              </div>
-              <div className="text-wrapper-11">Upcoming Events</div>
-            </div>
-            <div className="news">
-              <div className="overlap-8">
-                <div className="event-2">
-                  <div className="overlap-group-3">
-                    <div className="text-wrapper-12">News content</div>
-                    <div className="text-wrapper-13">News 1</div>
-                  </div>
-                </div>
-                <div className="event-3">
-                  <div className="overlap-9">
-                    <div className="text-wrapper-14">Content</div>
-                    <div className="text-wrapper-15">News 2</div>
-                  </div>
-                </div>
-                <div className="event-4">
-                  <div className="overlap-10">
-                    <div className="text-wrapper-16">Content</div>
-                    <div className="text-wrapper-17">News 3</div>
-                  </div>
-                </div>
-              </div>
-              <div className="text-wrapper-11">Recent News</div>
-            </div>
-            <img className="img" alt="Image" src="/img/image-8.png" />
-            <img className="image-2" alt="Image" src="/img/image-8.png" />
-            <img className="image-3" alt="Image" src="/img/image-8.png" />
-            <div className="text-wrapper-18">More News</div>
-            <div className="campus-resources">
-              <div className="overlap-11">
-                <a
-                  className="financial-aid"
-                  href="https://www.csus.edu/apply/financial-aid-scholarships/"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  <div className="overlap-group-4">
-                    <div className="text-wrapper-19">Financial Aid</div>
-                  </div>
-                </a>
-                <a
-                  className="housing-information"
-                  href="https://www.csus.edu/student-life/housing/"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  <div className="overlap-12">
-                    <div className="text-wrapper-20">Housing Information</div>
-                  </div>
-                </a>
-                <div className="clubs-organizations">
-                  <div className="overlap-13">
-                    <img className="rectangle-2" alt="Rectangle" src="/img/rectangle-28-4.svg" />
-                    <div className="clubs-organizations-2">Clubs &amp; Organizations</div>
-                  </div>
-                </div>
-                <a
-                  className="scholarships"
-                  href="https://csus.academicworks.com/"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  <div className="overlap-14">
-                    <div className="text-wrapper-21">Scholarships</div>
-                  </div>
-                </a>
-                <div className="scholarships-2">
-                  <div className="overlap-15">
-                    <a
-                      className="text-wrapper-22"
-                      href="https://www.csus.edu/international-programs-global-engagement/international-student-scholar-services/"
-                      rel="noopener noreferrer"
-                      target="_blank"
-                    >
-                      International Services
-                    </a>
-                  </div>
-                </div>
-                <div className="text-wrapper-23">Campus Resources</div>
-              </div>
-            </div>
-            <div className="location">
-              <div className="text-wrapper-24">Location</div>
-              <p className="international">
-                International Programs <br />
-                Library, Room 1001
-                <br />
-                Mon. – Fri., 8 a.m. – 5 p.m.
-              </p>
-              <div className="overlap-16">
-                <a href="https://www.csus.edu/campusmap/" rel="noopener noreferrer" target="_blank">
-                  <p className="text-wrapper-25">Find us on Campus Map</p>
-                </a>
-              </div>
-              <img className="image-4" alt="Image" src="/img/image-1.png" />
-            </div>
-            <img className="image-5" alt="Image" src="/img/image-5.png" />
-            <img className="image-6" alt="Image" src="/img/image-9.png" />
-          </div>
-          <div className="overlap-17">
-            <div className="overlap-wrapper-2">
-              <div className="overlap-18">
-                <div className="rectangle-3" />
-                <div className="settings-button">SETTINGS</div>
-              </div>
-            </div>
-            <img className="settings" alt="Settings" src="/img/settings.svg" />
-          </div>
-          <div className="overlap-19">
-            <div className="overlap-wrapper-2">
-              <div className="overlap-18">
-                <div className="rectangle-3" />
-                <div className="chatrooms">CHATROOMS</div>
-              </div>
-            </div>
-            <img className="message-circle" alt="Message circle" src="/img/message-circle.svg" />
-          </div>
-          <div className="overlap-20">
-            <div className="profile-button">
-              <div className="overlap-21">
-                <div className="rectangle-4" />
-                <div className="profile">PROFILE</div>
-              </div>
-            </div>
-            <img className="image-7" alt="Image" src="/img/image-4.png" />
-          </div>
-          <div className="text-wrapper-26">Welcome, NAME!</div>
-        </div>
-        <header className="header">
-          <div className="overlap-22">
-            <div className="text-wrapper-27">UNIVERSAL BUZZ</div>
-            <div className="text-wrapper-28">HOME</div>
-            <div className="text-wrapper-29">ABOUT</div>
-            <div className="text-wrapper-30">Sign Out</div>
-            <div className="search">
-              <input className="input" placeholder="Search" type="text" />
-            </div>
-          </div>
-        </header>
-      </div>
-    </div>
-  );
+
+const Homepage = () => {
+  	const [isEventMiniFrameOpen, setEventMiniFrameOpen] = useState(false);
+  	const navigate = useNavigate();
+  	const onMoreEventsTextClick = useCallback(() => {
+    		// Add your code here
+  	}, []);
+  	
+  	
+  	const openEventMiniFrame = useCallback(() => {
+    		setEventMiniFrameOpen(true);
+  	}, []);
+  	
+  	const closeEventMiniFrame = useCallback(() => {
+    		setEventMiniFrameOpen(false);
+  	}, []);
+  	
+  	
+  	const onMoreNewsTextClick = useCallback(() => {
+    		// Add your code here
+  	}, []);
+  	
+  	
+  	const onCampusResourcesContainerClick = useCallback(() => {
+    		const anchor = document.querySelector("[data-scroll-to='campusResourcesBorder']");
+    		if(anchor) {
+      			anchor.scrollIntoView({"block":"start","behavior":"smooth"}) }
+  	}, []);
+  	
+  	
+  	const onFindUsOnClick = useCallback(() => {
+    		window.open("https://www.csus.edu/campusmap/");
+  	}, []);
+  	
+  	
+  	const onHousingInformationContainerClick = useCallback(() => {
+    		window.open("https://www.csus.edu/student-life/housing/");
+  	}, []);
+  	
+  	
+  	const onFinancialAidContainerClick = useCallback(() => {
+    		window.open("https://www.csus.edu/apply/financial-aid-scholarships/");
+  	}, []);
+  	
+  	
+  	const onScholarshipsContainerClick = useCallback(() => {
+    		window.open("https://csus.academicworks.com/");
+  	}, []);
+  	
+  	
+  	const onInternationalServicesTextClick = useCallback(() => {
+    		window.open("https://www.csus.edu/international-programs-global-engagement/international-student-scholar-services/");
+  	}, []);
+  	
+  	
+  	const onSettingsButtonContainerClick = useCallback(() => {
+    		// Add your code here
+        navigate('../Settings');
+  	}, []);
+  	
+  	
+  	const onChatroomButtonContainerClick = useCallback(() => {
+    		// Add your code here
+        navigate('../MainChatroom');
+  	}, []);
+  	
+  	
+  	const onProfileButtonContainerClick = useCallback(() => {
+    		// Add your code here
+        navigate('../Profile');
+  	}, []);
+  	
+  	
+  	const onABOUTTextClick = useCallback(() => {
+    		// Add your code here
+        navigate('../About');
+  	}, []);
+  	
+  	
+  	const onSignOutTextClick = useCallback(() => {
+    		// Add your code here
+        navigate('../Login');
+  	}, []);
+  	
+  	return (<>
+    		<div className="homepage">
+      			<div className="footer">
+        				<div className="footer-child" />
+        				<div className="about-us">About Us:</div>
+        				<div className="follow-us">Follow Us:</div>
+        				<div className="contact-us-phone-container">
+          					<p className="contact-us">Contact Us:</p>
+          					<p className="contact-us">Phone: (916) 278-6686</p>
+          					<p className="contact-us">
+            						<a className="intlinfocsusedu1" href="mailto:intlinfo@csus.edu" target="_blank">
+              							<span className="intlinfocsusedu2">intlinfo@csus.edu</span>
+            						</a>
+          					</p>
+        				</div>
+      			</div>
+      			<div className="event">
+        				<img className="event-border-icon" alt="" src="./img/homepage/Event Border.png" />
+        				<div className="more-events" onClick={onMoreEventsTextClick}>More Events</div>
+        				<div className="event-3">
+          					<img className="events-rectangle-icon" alt="" src="./img/homepage/Events Rectangle.png" />
+          					<div className="event1">Event</div>
+          					<b className="date">Date</b>
+        				</div>
+        				<div className="event-2">
+          					<img className="events-rectangle-icon" alt="" src="./img/homepage/Events Rectangle.png" />
+          					<div className="adaptive-sports-wheelchair">Adaptive Sports: Wheelchair Rugby</div>
+          					<b className="tues-april-2">Tues, April 2</b>
+          					<img className="event-image-2-icon" alt="" src="./img/homepage/Event-image-2.png" />
+        				</div>
+        				<div className="event-1" onClick={openEventMiniFrame}>
+          					<img className="events-rectangle-icon2" alt="" src="./img/homepage/Events Rectangle.png" />
+          					<div className="monday-meditation-april">Monday Meditation: April (Early Morning)</div>
+          					<b className="mon-april-1">Mon, April 1</b>
+          					<img className="event-image-1-icon" alt="" src="./img/homepage/Event-image-1.png" />
+        				</div>
+        				<b className="upcoming-events">Upcoming Events</b>
+      			</div>
+      			<div className="news">
+        				<img className="news-border-icon" alt="" src="./img/homepage/News Border.png" />
+        				<div className="more-news" onClick={onMoreNewsTextClick}>More News</div>
+        				<div className="news-3">
+          					<img className="events-rectangle-icon" alt="" src="./img/homepage/News Rectangle.png" />
+          					<div className="content">Content</div>
+          					<b className="news-31">News 3</b>
+          					<img className="news-image-3-icon" alt="" src="./img/homepage/News-image-3.png" />
+        				</div>
+        				<div className="news-2">
+          					<img className="events-rectangle-icon" alt="" src="./img/homepage/News Rectangle.png" />
+          					<div className="content1">Content</div>
+          					<b className="news-21">News 2</b>
+          					<img className="news-image-2-icon" alt="" src="./img/homepage/News-image-2.png" />
+        				</div>
+        				<div className="news-1">
+          					<img className="events-rectangle-icon" alt="" src="./img/homepage/News Rectangle.png" />
+          					<div className="news-content">News content</div>
+          					<b className="news-11">News 1</b>
+          					<img className="news-image-1-icon" alt="" src="./img/homepage/News-image-1.png" />
+        				</div>
+        				<b className="upcoming-events">Recent News</b>
+      			</div>
+      			<div className="campus-resources" onClick={onCampusResourcesContainerClick}>
+        				<img className="campus-resources-border" alt="" src="./img/homepage/Campus Resources Border.png" data-scroll-to="campusResourcesBorder" />
+        				<div className="location">
+          					<img className="map-link-border" alt="" src="./img/homepage/Map Link Border.png" />
+          					<div className="find-us-on" onClick={onFindUsOnClick}>Find us on Campus Map</div>
+          					<div className="international-programs-library-container">
+            						<p className="contact-us">{`International Programs `}</p>
+            						<p className="contact-us">Library, Room 1001</p>
+            						<p className="contact-us">Mon. – Fri., 8 a.m. – 5 p.m.</p>
+          					</div>
+          					<b className="location1">Location</b>
+          					<img className="campus-image-icon" alt="" src="./img/homepage/Campus-image.png" />
+        				</div>
+        				<div className="clubs-organizations">
+          					<img className="clubs-border-icon" alt="" src="./img/homepage/Clubs Border.png" />
+          					<b className="clubs-organizations1">{`Clubs & Organizations`}</b>
+        				</div>
+        				<div className="housing-information" onClick={onHousingInformationContainerClick}>
+          					<img className="clubs-border-icon" alt="" src="./img/homepage/Housing Border.png" />
+          					<b className="housing-information1">Housing Information</b>
+        				</div>
+        				<div className="financial-aid" onClick={onFinancialAidContainerClick}>
+          					<img className="clubs-border-icon" alt="" src="./img/homepage/Financial Aid Border.png" />
+          					<b className="financial-aid1">Financial Aid</b>
+        				</div>
+        				<div className="scholarships" onClick={onScholarshipsContainerClick}>
+          					<img className="clubs-border-icon" alt="" src="./img/homepage/Scholarships Border.png" />
+          					<b className="scholarships1">Scholarships</b>
+        				</div>
+        				<div className="international-services">
+          					<img className="clubs-border-icon" alt="" src="./img/homepage/International Services Border.png" />
+          					<b className="international-services1" onClick={onInternationalServicesTextClick}>International Services</b>
+        				</div>
+        				<b className="campus-resources1">Campus Resources</b>
+      			</div>
+      			<div className="settings-button" onClick={onSettingsButtonContainerClick}>
+        				<div className="settings-border" />
+        				<b className="settings-button1">SETTINGS</b>
+      			</div>
+      			<div className="chatroom-button" onClick={onChatroomButtonContainerClick}>
+        				<div className="settings-border" />
+        				<b className="chatrooms">CHATROOMS</b>
+      			</div>
+      			<div className="profile-button" onClick={onProfileButtonContainerClick}>
+        				<div className="profile-border" />
+        				<b className="profile">PROFILE</b>
+      			</div>
+      			<b className="welcome-name">Welcome, NAME!</b>
+      			<img className="image-4-icon" alt="" src="./img/homepage/image 4.png" />
+      			<img className="settings-icon" alt="" src="./img/homepage/Settings.png" />
+      			<img className="message-circle-icon" alt="" src="./img/homepage/message-circle.png" />
+      			<img className="header-image-2-icon" alt="" src="./img/homepage/Header-image-2.png" />
+      			<img className="header-image-1-icon" alt="" src="./img/homepage/Header-image-1.png" />
+      			<div className="header">
+                <img alt="" src="./img/homepage/Rectangle 1.png" />
+        				<div className="header-child" />
+        				<div className="universal-buzz">UNIVERSAL BUZZ</div>
+        				<div className="home">HOME</div>
+        				<div className="about" onClick={onABOUTTextClick}>ABOUT</div>
+        				<div className="sign-out" onClick={onSignOutTextClick}>Sign Out</div>
+        				<div className="search">
+          					<img className="search-space-icon" alt="" src="./img/homepage/Search Space.png" />
+          					<div className="search1">Search</div>
+        				</div>
+      			</div>
+    		</div>
+    		{isEventMiniFrameOpen && (
+      			<PortalPopup
+        				overlayColor="rgba(113, 113, 113, 0.3)"
+        				placement="Centered"
+        				
+        				
+        				
+        				
+        				
+        				onOutsideClick={closeEventMiniFrame}
+        				>
+        				<EventMiniFrame onClose={closeEventMiniFrame} />
+      			</PortalPopup>
+    		)}</>);
 };
+
 export default Homepage;
