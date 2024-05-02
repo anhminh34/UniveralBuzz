@@ -10,6 +10,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.view.RedirectView;
 
 import jakarta.servlet.http.HttpSession;
@@ -28,17 +29,15 @@ public class EventController {
     }
 
     // When an event is submitted, save it, and reload the page.
-    @GetMapping("/submitEvent")
+    @PostMapping("/submitEvent")
     public RedirectView submitEventForm(@ModelAttribute Event event, Model model) {
         try {
-            // Save the event
             Event savedEvent = eventService.saveEvent(event);
 
             // Print the saved event for testing
-            System.out.println(savedEvent.toString());
+            System.out.println("Creating a new event: " + savedEvent.toString());
 
-            // Redirect to the EventsPage after submitting the event
-            return new RedirectView("/EventSubmissionPage");
+            return new RedirectView("/EventSubmissionPage.html");
 
         } catch (Exception e) {
             // Redirect to an error page if an exception occurs
@@ -47,8 +46,24 @@ public class EventController {
         }
     }
 
+    @PostMapping("/adminRemoveEvent")
+    public RedirectView adminRemoveEvent(@RequestParam("eventName") String eventName) {
+        try {
+            System.out.println("Admin Page removing an event...");
+            eventService.printAllEvents();
+
+            eventService.removeByEventName(eventName); 
+            System.out.println("Event " + eventName + " removed.");
+
+            return new RedirectView("AdminPage.html");
+        } catch(Exception e) {
+            System.out.println("Event "+ eventName + " does not exist!");
+            return new RedirectView("AdminPage.html");
+        }
+    }
+
     @GetMapping("/EventsPage")
-    private String eventsPage(Model model, HttpSession session) {
+    public String eventsPage(Model model, HttpSession session) {
 
         System.out.println("eventsPage called");
         eventService.printAllEvents();

@@ -69,9 +69,9 @@ body {
     <!--ADD LINKS TO THE OTHER PAGES-->
     <div class="greenHeader">
         <h1 class="titleText" style="color: white">Events</h1>
-        <a href="/universalbuzzSpring\src\main\resources\static\LoginPage.html" class="topBarText" style="right: 19%; top: 40%;">Home</a>
-        <a href="/universalbuzzSpring\src\main\resources\static\AboutPage.html" class="topBarText" style="right: 12.5%; top: 40%;">About</a>               <!--LINKS TO OTHER PAGES HERE-->
-        <a href="/universalbuzzSpring\src\main\resources\static\SignOutPage.html" class="topBarText" style="right: 5%; top: 40%;">Sign Out</a>
+        <a href="\LoginPage" class="topBarText" style="right: 19%; top: 40%;">Home</a>
+        <a href="\AboutPage" class="topBarText" style="right: 12.5%; top: 40%;">About</a>               <!--LINKS TO OTHER PAGES HERE-->
+        <a href="\SignOutPage" class="topBarText" style="right: 5%; top: 40%;">Sign Out</a>
     </div>
 
     <!-- Display the 'thanks for submitting' message if it exists -->
@@ -82,17 +82,17 @@ body {
     <!--Submit a form called submitEvent that contains the event data-->
     <form action="/submitEvent" method="post" enctype="multipart/form-data">
         <div class="eventNameInput">
-            <input style="width: 402px; height: 53px; left: 46px; top: 241px; position: absolute; background: white; border: 2px black solid;" type="text" name="name">
+            <input style="width: 402px; height: 53px; left: 46px; top: 241px; position: absolute; background: white; border: 2px black solid;" type="text" name="eventName">
         </div>
-
-        <textarea class="descriptionInput" cols="50" rows="10" style="width: 914px; height: 615px; left: 495px; top: 241px; position: absolute; background: white; border: 2px black solid; padding: 0; padding-top: 5px;" name="description"></textarea>
 
         <div class="dateInput">
-            <input  style="width: 402px; height: 53px; left: 46px; top: 358px; position: absolute; background: white; border: 2px black solid" type="datetime-local" name="date" required>
+            <input  style="width: 402px; height: 53px; left: 46px; top: 358px; position: absolute; background: white; border: 2px black solid" type="date" name="eventDate" required>
         </div>
 
-        <div class="imageUpload">
-            <input  style="width: 402px; height: 53px; left: 46px; top: 532px; position: absolute; background: white; border: 2px black solid" type="file" name="image">
+        <textarea class="descriptionInput" cols="50" rows="10" style="width: 914px; height: 615px; left: 495px; top: 241px; position: absolute; background: white; border: 2px black solid; padding: 0; padding-top: 5px;" name="eventDescription"></textarea>
+
+        <div class="locationUpload">
+            <input  style="width: 402px; height: 53px; left: 46px; top: 532px; position: absolute; background: white; border: 2px black solid" type="text" name="eventLocation">
         </div>
 
         <div class="submitButton">

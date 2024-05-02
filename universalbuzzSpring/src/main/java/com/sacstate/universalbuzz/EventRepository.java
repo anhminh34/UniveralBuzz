@@ -3,8 +3,6 @@ package com.sacstate.universalbuzz;
 
 
 import java.util.List;
-import java.util.Optional;
-
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
@@ -12,7 +10,10 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface EventRepository extends JpaRepository<Event, Long> {
     // Find a single event
-    Optional<Event> findByEventName(String eventName);
+    Event findByEventName(String eventName);
+
+    // Delete an event, with its name
+    void deleteByEventName(String eventName);
 
     // Find all events
     List<Event> findAll();
@@ -20,8 +21,4 @@ public interface EventRepository extends JpaRepository<Event, Long> {
     // Return a list of events
     @Query("SELECT e FROM Event e")
     List<Event> listAllEvents();
-
-    List<Event> findByeventNameContaining(String name);
-
-    Event save(Event event);
 }

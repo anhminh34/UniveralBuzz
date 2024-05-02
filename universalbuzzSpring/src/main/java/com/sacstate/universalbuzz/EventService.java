@@ -50,4 +50,19 @@ public class EventService {
         return eventRepository.save(event);
     }
 
+    // Delete an event after searching for its name
+    public void removeByEventName(String eventName) {
+        // Search for the event name
+        Event eventToRemove = eventRepository.findByEventName(eventName);
+
+        // Error checking, search for the event
+        if (eventToRemove != null) {
+            // If the event exists, delete it
+            eventRepository.delete(eventToRemove);
+        } else {
+            // Otherwise if the event does not exist, print to the console and error.
+            throw new IllegalArgumentException(eventName + " does not exist.");
+        }
+    }
+
 }

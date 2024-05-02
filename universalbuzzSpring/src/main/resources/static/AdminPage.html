@@ -58,7 +58,7 @@
     color: #043927;
     position: relative;
     top: 6%;
-    left: 4.5%;
+    left: 0%;
 }
 </style>
 
@@ -74,9 +74,9 @@
 <!--ADD LINKS TO THE OTHER PAGES-->
 <div class="greenHeader">
     <h1 class="titleText" style="color: white">Events</h1>
-    <a href="/universalbuzzSpring\src\main\resources\static\LoginPage.html" class="topBarText" style="right: 19%; top: 40%;">Home</a>
-    <a href="/universalbuzzSpring\src\main\resources\static\AboutPage.html" class="topBarText" style="right: 12.5%; top: 40%;">About</a>               <!--LINKS TO OTHER PAGES HERE-->
-    <a href="/universalbuzzSpring\src\main\resources\static\SignOutPage.html" class="topBarText" style="right: 5%; top: 40%;">Sign Out</a>
+    <a href="/LoginPage" class="topBarText" style="right: 19%; top: 40%;">Home</a>
+    <a href="/AboutPage" class="topBarText" style="right: 12.5%; top: 40%;">About</a>               <!--LINKS TO OTHER PAGES HERE-->
+    <a href="/SignOutPage" class="topBarText" style="right: 5%; top: 40%;">Sign Out</a>
 </div>
 
 <!--Create a tan rectangle on the left side of the screen, should move down the whole page-->
@@ -84,8 +84,24 @@
 <div class="tanRectangle">
     <input type="text" class="searchBar" placeholder="Filter">
     <!--ADD LINKS TO THE OTHER PAGES-->
-    <a href="/universalbuzzSpring\src\main\resources\static\EventSubmissionPage.html" class="submitEditButtons">Submit New Event</a>                                                                     <!--AND HERE-->
+    <a href="/EventSubmissionPage" class="submitEditButtons" style="position:relative;">Submit New Event</a>                                                                     <!--AND HERE-->
 </div>
+
+<!-- If the user submits "Delete Event", call "adminRemoveEvent" -->
+<form action="/adminRemoveEvent" method="post">
+    <div style="position:absolute; top:40%; right:60%">
+        <input type="text" name="eventName" placeholder="Delete an event">
+        <button type="submit">Submit</button>
+    </div>
+</form>
+
+<!-- If the user submits "Add Admin", call "adminAddAdmin" -->
+<form action="/adminAddAdmin" method="post">
+    <div>
+        <input type="text" name="addAdmin" placeholder="Add an admin">
+        <button type="submit">Submit</button>
+    </div>
+</form>
 
 </div>
 </body>

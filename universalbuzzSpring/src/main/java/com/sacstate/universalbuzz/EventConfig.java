@@ -17,27 +17,18 @@ public class EventConfig {
     private EventRepository eventRepository;
 
     @Autowired
-    private final EventService eventService;
-
-    @Autowired
     public EventConfig(EventRepository eventRepository, EventService eventService) {
         this.eventRepository = eventRepository;
-        this.eventService = eventService;
     }
 
     @PostMapping("/submitEvent")
     public String eventSubmission(@ModelAttribute Event event, Model model) {
-
-        System.out.println(event.toString());
-        // validate
-        System.out.println(event.getEventName());
-        System.out.println(event.getId());
-        System.out.println(event.getEventDate());
-
         Event eventInserted = eventRepository.save(event);
-        model.addAttribute("message", eventInserted.getEventName() + " inserted.");
 
+        model.addAttribute("successMessage", eventInserted.getEventName() + " inserted.");
         model.addAttribute("message", "Thank you for your submission! Your application will be reviewed and added if deemed appropriate.");
+
+        System.out.println("Adding a new event: " + event.toString());
 
         // Redirecting back to the same page
         return "redirect:/EventSubmissionPage.html";
